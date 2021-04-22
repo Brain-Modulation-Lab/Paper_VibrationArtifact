@@ -1,0 +1,3480 @@
+addpath(PROTOCOL_PATH);
+
+cd(PROTOCOL_PATH)
+
+subject_table = readtable(PROTOCOL_TABLE);         
+fprintf('=== Running protocol %s ===\n',PROTOCOL_FUNCTION)
+=== Running protocol apply_audio_p_coherence_permutation_H0_Mac ===
+
+for i=1:height(subject_table)
+  SUBJECT = subject_table.subject{i};
+  fprintf('Running protocol.')
+  %running protocol
+  try
+    proto = str2func(PROTOCOL_FUNCTION);
+    proto(SUBJECT);
+    fprintf('OK\n')
+  catch err
+    fprintf('FAILED: %s\n',err.message)
+  end
+  
+  clear proto
+end
+Running protocol.audio_p coherence analysis for subject DBS3022 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 5 MB
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 63 seconds and required the additional allocation of an estimated 47 MB
+Binary calculation across channels and epochs.
+[Warning: removing 1176 rows with nans] 
+Obtaining unique epochs...
+OK
+Running protocol.audio_p coherence analysis for subject DBS3023 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 11 MB
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 30 seconds and required the additional allocation of an estimated 1591 MB
+Binary calculation across channels and epochs.
+[Warning: removing 6783 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3024 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 60 seconds and required the additional allocation of an estimated 6 MB
+Binary calculation across channels and epochs.
+[Warning: removing 2793 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3025 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 20 MB
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 59 seconds and required the additional allocation of an estimated 92 MB
+Binary calculation across channels and epochs.
+[Warning: removing 30690 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3026 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 15 MB
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 26 seconds and required the additional allocation of an estimated 1285 MB
+Binary calculation across channels and epochs.
+[Warning: removing 13066 rows with nans] 
+Obtaining unique epochs...
+OK
+Running protocol.audio_p coherence analysis for subject DBS3027 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 67 seconds and required the additional allocation of an estimated 9 MB
+Binary calculation across channels and epochs.
+[Warning: removing 7750 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3028 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 11 MB
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 71 seconds and required the additional allocation of an estimated 1411 MB
+Binary calculation across channels and epochs.
+[Warning: removing 1043 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3029 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 17 MB
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 42 seconds and required the additional allocation of an estimated 100 MB
+Binary calculation across channels and epochs.
+[Warning: removing 2240 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3030 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 44 seconds and required the additional allocation of an estimated 14 MB
+Binary calculation across channels and epochs.
+[Warning: removing 140 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3031 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 14 MB
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 46 seconds and required the additional allocation of an estimated 100 MB
+Binary calculation across channels and epochs.
+[Warning: removing 1112 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3032 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 11 MB
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 72 seconds and required the additional allocation of an estimated 50 MB
+Binary calculation across channels and epochs.
+[Warning: removing 3480 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS4057 
+FAILED: stimulus syllable not found
+Running protocol.audio_p coherence analysis for subject DBS4058 
+FAILED: stimulus syllable not found
+Running protocol.audio_p coherence analysis for subject DBS4060 
+FAILED: stimulus syllable not found
+Running protocol.audio_p coherence analysis for subject DBS4061 
+FAILED: stimulus syllable not found
+Running protocol.audio_p coherence analysis for subject DBS4062 
+FAILED: stimulus syllable not found
+Running protocol.audio_p coherence analysis for subject DBS4066 
+FAILED: stimulus syllable not found
+Running protocol.audio_p coherence analysis for subject DBS4067 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 13 MB
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 25 seconds and required the additional allocation of an estimated 1525 MB
+Binary calculation across channels and epochs.
+[Warning: removing 4182 rows with nans] 
+Obtaining unique epochs...
+[Warning: epoch 45594 not found in raw] 
+[Warning: epoch 45595 not found in raw] 
+[Warning: epoch 45596 not found in raw] 
+[Warning: epoch 45597 not found in raw] 
+[Warning: epoch 45598 not found in raw] 
+[Warning: epoch 45599 not found in raw] 
+[Warning: epoch 45600 not found in raw] 
+[Warning: epoch 45601 not found in raw] 
+[Warning: epoch 45602 not found in raw] 
+[Warning: epoch 45603 not found in raw] 
+[Warning: epoch 45604 not found in raw] 
+[Warning: epoch 45605 not found in raw] 
+[Warning: epoch 45606 not found in raw] 
+[Warning: epoch 45607 not found in raw] 
+[Warning: epoch 45608 not found in raw] 
+[Warning: epoch 45609 not found in raw] 
+[Warning: epoch 45610 not found in raw] 
+[Warning: epoch 45611 not found in raw] 
+[Warning: epoch 45612 not found in raw] 
+[Warning: epoch 45613 not found in raw] 
+[Warning: epoch 45614 not found in raw] 
+[Warning: epoch 45615 not found in raw] 
+[Warning: epoch 45616 not found in raw] 
+[Warning: epoch 45617 not found in raw] 
+[Warning: epoch 45618 not found in raw] 
+[Warning: epoch 45619 not found in raw] 
+[Warning: epoch 45620 not found in raw] 
+[Warning: epoch 45621 not found in raw] 
+[Warning: epoch 45622 not found in raw] 
+[Warning: epoch 45623 not found in raw] 
+[Warning: epoch 45624 not found in raw] 
+[Warning: epoch 45625 not found in raw] 
+[Warning: epoch 45626 not found in raw] 
+[Warning: epoch 45627 not found in raw] 
+[Warning: epoch 45628 not found in raw] 
+[Warning: epoch 45629 not found in raw] 
+[Warning: epoch 45630 not found in raw] 
+[Warning: epoch 45631 not found in raw] 
+[Warning: epoch 45632 not found in raw] 
+[Warning: epoch 45633 not found in raw] 
+[Warning: epoch 45634 not found in raw] 
+[Warning: epoch 45635 not found in raw] 
+[Warning: epoch 45636 not found in raw] 
+[Warning: epoch 45637 not found in raw] 
+[Warning: epoch 45638 not found in raw] 
+[Warning: epoch 45639 not found in raw] 
+[Warning: epoch 45640 not found in raw] 
+[Warning: epoch 45641 not found in raw] 
+[Warning: epoch 45642 not found in raw] 
+[Warning: epoch 45643 not found in raw] 
+[Warning: epoch 45644 not found in raw] 
+[Warning: epoch 45645 not found in raw] 
+[Warning: epoch 45646 not found in raw] 
+[Warning: epoch 45647 not found in raw] 
+[Warning: epoch 45648 not found in raw] 
+[Warning: epoch 45649 not found in raw] 
+[Warning: epoch 45650 not found in raw] 
+[Warning: epoch 45651 not found in raw] 
+[Warning: epoch 45652 not found in raw] 
+[Warning: epoch 45653 not found in raw] 
+[Warning: epoch 45654 not found in raw] 
+[Warning: epoch 45655 not found in raw] 
+[Warning: epoch 45656 not found in raw] 
+[Warning: epoch 45657 not found in raw] 
+[Warning: epoch 45658 not found in raw] 
+[Warning: epoch 45659 not found in raw] 
+[Warning: epoch 45660 not found in raw] 
+[Warning: epoch 45661 not found in raw] 
+[Warning: epoch 45662 not found in raw] 
+[Warning: epoch 45663 not found in raw] 
+[Warning: epoch 45664 not found in raw] 
+[Warning: epoch 45665 not found in raw] 
+[Warning: epoch 45666 not found in raw] 
+[Warning: epoch 45667 not found in raw] 
+[Warning: epoch 45668 not found in raw] 
+[Warning: epoch 45669 not found in raw] 
+[Warning: epoch 45670 not found in raw] 
+[Warning: epoch 45671 not found in raw] 
+[Warning: epoch 45672 not found in raw] 
+[Warning: epoch 45673 not found in raw] 
+[Warning: epoch 45674 not found in raw] 
+[Warning: epoch 45675 not found in raw] 
+[Warning: epoch 45676 not found in raw] 
+[Warning: epoch 45677 not found in raw] 
+[Warning: epoch 45678 not found in raw] 
+[Warning: epoch 45679 not found in raw] 
+[Warning: epoch 45680 not found in raw] 
+[Warning: epoch 45681 not found in raw] 
+[Warning: epoch 45682 not found in raw] 
+[Warning: epoch 45683 not found in raw] 
+[Warning: epoch 45684 not found in raw] 
+[Warning: epoch 45685 not found in raw] 
+[Warning: epoch 45686 not found in raw] 
+[Warning: epoch 45687 not found in raw] 
+[Warning: epoch 45688 not found in raw] 
+[Warning: epoch 45689 not found in raw] 
+[Warning: epoch 45690 not found in raw] 
+[Warning: epoch 45691 not found in raw] 
+[Warning: epoch 45692 not found in raw] 
+[Warning: epoch 45693 not found in raw] 
+[Warning: epoch 45694 not found in raw] 
+[Warning: epoch 45695 not found in raw] 
+[Warning: epoch 45696 not found in raw] 
+[Warning: epoch 45697 not found in raw] 
+[Warning: epoch 45698 not found in raw] 
+[Warning: epoch 45699 not found in raw] 
+[Warning: epoch 45700 not found in raw] 
+[Warning: epoch 45701 not found in raw] 
+[Warning: epoch 45702 not found in raw] 
+[Warning: epoch 45703 not found in raw] 
+[Warning: epoch 45704 not found in raw] 
+[Warning: epoch 45705 not found in raw] 
+[Warning: epoch 45706 not found in raw] 
+[Warning: epoch 45707 not found in raw] 
+[Warning: epoch 45708 not found in raw] 
+[Warning: epoch 45709 not found in raw] 
+[Warning: epoch 45710 not found in raw] 
+[Warning: epoch 45711 not found in raw] 
+[Warning: epoch 45712 not found in raw] 
+[Warning: epoch 45713 not found in raw] 
+[Warning: epoch 45714 not found in raw] 
+[Warning: epoch 45715 not found in raw] 
+[Warning: epoch 45716 not found in raw] 
+[Warning: epoch 45717 not found in raw] 
+[Warning: epoch 45718 not found in raw] 
+[Warning: epoch 45719 not found in raw] 
+[Warning: epoch 45720 not found in raw] 
+[Warning: epoch 45721 not found in raw] 
+[Warning: epoch 45722 not found in raw] 
+[Warning: epoch 45723 not found in raw] 
+[Warning: epoch 45724 not found in raw] 
+[Warning: epoch 45725 not found in raw] 
+[Warning: epoch 45726 not found in raw] 
+[Warning: epoch 45727 not found in raw] 
+[Warning: epoch 45728 not found in raw] 
+[Warning: epoch 45729 not found in raw] 
+[Warning: epoch 45730 not found in raw] 
+[Warning: epoch 45731 not found in raw] 
+[Warning: epoch 45732 not found in raw] 
+[Warning: epoch 45733 not found in raw] 
+[Warning: epoch 45734 not found in raw] 
+[Warning: epoch 45735 not found in raw] 
+[Warning: epoch 45736 not found in raw] 
+[Warning: epoch 45737 not found in raw] 
+[Warning: epoch 45738 not found in raw] 
+[Warning: epoch 45739 not found in raw] 
+[Warning: epoch 45740 not found in raw] 
+[Warning: epoch 45741 not found in raw] 
+[Warning: epoch 45742 not found in raw] 
+[Warning: epoch 45743 not found in raw] 
+[Warning: epoch 45744 not found in raw] 
+[Warning: epoch 45745 not found in raw] 
+[Warning: epoch 45746 not found in raw] 
+[Warning: epoch 45747 not found in raw] 
+[Warning: epoch 45748 not found in raw] 
+[Warning: epoch 45749 not found in raw] 
+[Warning: epoch 45750 not found in raw] 
+[Warning: epoch 45751 not found in raw] 
+[Warning: epoch 45752 not found in raw] 
+[Warning: epoch 45753 not found in raw] 
+[Warning: epoch 45754 not found in raw] 
+[Warning: epoch 45755 not found in raw] 
+[Warning: epoch 45756 not found in raw] 
+[Warning: epoch 45757 not found in raw] 
+[Warning: epoch 45758 not found in raw] 
+[Warning: epoch 45759 not found in raw] 
+[Warning: epoch 45760 not found in raw] 
+[Warning: epoch 45761 not found in raw] 
+[Warning: epoch 45762 not found in raw] 
+[Warning: epoch 45763 not found in raw] 
+[Warning: epoch 45764 not found in raw] 
+[Warning: epoch 45765 not found in raw] 
+[Warning: epoch 45766 not found in raw] 
+[Warning: epoch 45767 not found in raw] 
+[Warning: epoch 45768 not found in raw] 
+[Warning: epoch 45769 not found in raw] 
+[Warning: epoch 45770 not found in raw] 
+[Warning: epoch 45771 not found in raw] 
+[Warning: epoch 45772 not found in raw] 
+[Warning: epoch 45773 not found in raw] 
+[Warning: epoch 45774 not found in raw] 
+[Warning: epoch 45775 not found in raw] 
+[Warning: epoch 45776 not found in raw] 
+[Warning: epoch 45777 not found in raw] 
+[Warning: epoch 45778 not found in raw] 
+[Warning: epoch 45779 not found in raw] 
+[Warning: epoch 45780 not found in raw] 
+[Warning: epoch 45781 not found in raw] 
+[Warning: epoch 45782 not found in raw] 
+[Warning: epoch 45783 not found in raw] 
+[Warning: epoch 45784 not found in raw] 
+[Warning: epoch 45785 not found in raw] 
+[Warning: epoch 45786 not found in raw] 
+[Warning: epoch 45787 not found in raw] 
+[Warning: epoch 45788 not found in raw] 
+[Warning: epoch 45789 not found in raw] 
+[Warning: epoch 45790 not found in raw] 
+[Warning: epoch 45791 not found in raw] 
+[Warning: epoch 45792 not found in raw] 
+[Warning: epoch 45793 not found in raw] 
+[Warning: epoch 45794 not found in raw] 
+[Warning: epoch 45795 not found in raw] 
+[Warning: epoch 45796 not found in raw] 
+[Warning: epoch 45797 not found in raw] 
+[Warning: epoch 45798 not found in raw] 
+[Warning: epoch 45799 not found in raw] 
+[Warning: epoch 45800 not found in raw] 
+[Warning: epoch 45801 not found in raw] 
+[Warning: epoch 45802 not found in raw] 
+[Warning: epoch 45803 not found in raw] 
+[Warning: epoch 45804 not found in raw] 
+[Warning: epoch 45805 not found in raw] 
+[Warning: epoch 45806 not found in raw] 
+[Warning: epoch 45807 not found in raw] 
+[Warning: epoch 45808 not found in raw] 
+[Warning: epoch 45809 not found in raw] 
+[Warning: epoch 45810 not found in raw] 
+[Warning: epoch 45811 not found in raw] 
+[Warning: epoch 45812 not found in raw] 
+[Warning: epoch 45813 not found in raw] 
+[Warning: epoch 45814 not found in raw] 
+[Warning: epoch 45815 not found in raw] 
+[Warning: epoch 45816 not found in raw] 
+[Warning: epoch 45817 not found in raw] 
+[Warning: epoch 45818 not found in raw] 
+[Warning: epoch 45819 not found in raw] 
+[Warning: epoch 45820 not found in raw] 
+[Warning: epoch 45821 not found in raw] 
+[Warning: epoch 45822 not found in raw] 
+[Warning: epoch 45823 not found in raw] 
+[Warning: epoch 45824 not found in raw] 
+[Warning: epoch 45825 not found in raw] 
+[Warning: epoch 45826 not found in raw] 
+[Warning: epoch 45827 not found in raw] 
+[Warning: epoch 45828 not found in raw] 
+[Warning: epoch 45829 not found in raw] 
+[Warning: epoch 45830 not found in raw] 
+[Warning: epoch 45831 not found in raw] 
+[Warning: epoch 45832 not found in raw] 
+[Warning: epoch 45833 not found in raw] 
+[Warning: epoch 45834 not found in raw] 
+[Warning: epoch 45835 not found in raw] 
+[Warning: epoch 45836 not found in raw] 
+[Warning: epoch 45837 not found in raw] 
+[Warning: epoch 45838 not found in raw] 
+[Warning: epoch 45839 not found in raw] 
+[Warning: epoch 45840 not found in raw] 
+[Warning: epoch 45841 not found in raw] 
+[Warning: epoch 45842 not found in raw] 
+[Warning: epoch 45843 not found in raw] 
+[Warning: epoch 45844 not found in raw] 
+[Warning: epoch 45845 not found in raw] 
+[Warning: epoch 45846 not found in raw] 
+[Warning: epoch 45847 not found in raw] 
+[Warning: epoch 45848 not found in raw] 
+[Warning: epoch 45849 not found in raw] 
+[Warning: epoch 45850 not found in raw] 
+[Warning: epoch 45851 not found in raw] 
+[Warning: epoch 45852 not found in raw] 
+[Warning: epoch 45853 not found in raw] 
+[Warning: epoch 45854 not found in raw] 
+[Warning: epoch 45855 not found in raw] 
+[Warning: epoch 45856 not found in raw] 
+[Warning: epoch 45857 not found in raw] 
+[Warning: epoch 45858 not found in raw] 
+[Warning: epoch 45859 not found in raw] 
+[Warning: epoch 45860 not found in raw] 
+[Warning: epoch 45861 not found in raw] 
+[Warning: epoch 45862 not found in raw] 
+[Warning: epoch 45863 not found in raw] 
+[Warning: epoch 45864 not found in raw] 
+[Warning: epoch 45865 not found in raw] 
+[Warning: epoch 45866 not found in raw] 
+[Warning: epoch 45867 not found in raw] 
+[Warning: epoch 45868 not found in raw] 
+[Warning: epoch 45869 not found in raw] 
+[Warning: epoch 45870 not found in raw] 
+[Warning: epoch 45871 not found in raw] 
+[Warning: epoch 45872 not found in raw] 
+[Warning: epoch 45873 not found in raw] 
+[Warning: epoch 45874 not found in raw] 
+[Warning: epoch 45875 not found in raw] 
+[Warning: epoch 45876 not found in raw] 
+[Warning: epoch 45877 not found in raw] 
+[Warning: epoch 45878 not found in raw] 
+[Warning: epoch 45879 not found in raw] 
+[Warning: epoch 45880 not found in raw] 
+[Warning: epoch 45881 not found in raw] 
+[Warning: epoch 45882 not found in raw] 
+[Warning: epoch 45883 not found in raw] 
+[Warning: epoch 45884 not found in raw] 
+[Warning: epoch 45885 not found in raw] 
+[Warning: epoch 45886 not found in raw] 
+[Warning: epoch 45887 not found in raw] 
+[Warning: epoch 45888 not found in raw] 
+[Warning: epoch 45889 not found in raw] 
+[Warning: epoch 45890 not found in raw] 
+[Warning: epoch 45891 not found in raw] 
+[Warning: epoch 45892 not found in raw] 
+[Warning: epoch 45893 not found in raw] 
+[Warning: epoch 45894 not found in raw] 
+[Warning: epoch 45895 not found in raw] 
+[Warning: epoch 45896 not found in raw] 
+[Warning: epoch 45897 not found in raw] 
+[Warning: epoch 45898 not found in raw] 
+[Warning: epoch 45899 not found in raw] 
+[Warning: epoch 45900 not found in raw] 
+[Warning: epoch 45901 not found in raw] 
+[Warning: epoch 45902 not found in raw] 
+[Warning: epoch 45903 not found in raw] 
+[Warning: epoch 45904 not found in raw] 
+[Warning: epoch 45905 not found in raw] 
+[Warning: epoch 45906 not found in raw] 
+[Warning: epoch 45907 not found in raw] 
+[Warning: epoch 45908 not found in raw] 
+[Warning: epoch 45909 not found in raw] 
+[Warning: epoch 45910 not found in raw] 
+[Warning: epoch 45911 not found in raw] 
+[Warning: epoch 45912 not found in raw] 
+[Warning: epoch 45913 not found in raw] 
+[Warning: epoch 45914 not found in raw] 
+[Warning: epoch 45915 not found in raw] 
+[Warning: epoch 45916 not found in raw] 
+[Warning: epoch 45917 not found in raw] 
+[Warning: epoch 45918 not found in raw] 
+[Warning: epoch 45919 not found in raw] 
+[Warning: epoch 45920 not found in raw] 
+[Warning: epoch 45921 not found in raw] 
+[Warning: epoch 45922 not found in raw] 
+[Warning: epoch 45923 not found in raw] 
+[Warning: epoch 45924 not found in raw] 
+[Warning: epoch 45925 not found in raw] 
+[Warning: epoch 45926 not found in raw] 
+[Warning: epoch 45927 not found in raw] 
+[Warning: epoch 45928 not found in raw] 
+[Warning: epoch 45929 not found in raw] 
+[Warning: epoch 45930 not found in raw] 
+[Warning: epoch 45931 not found in raw] 
+[Warning: epoch 45932 not found in raw] 
+[Warning: epoch 45933 not found in raw] 
+[Warning: epoch 45934 not found in raw] 
+[Warning: epoch 45935 not found in raw] 
+[Warning: epoch 45936 not found in raw] 
+[Warning: epoch 45937 not found in raw] 
+[Warning: epoch 45938 not found in raw] 
+[Warning: epoch 45939 not found in raw] 
+[Warning: epoch 45940 not found in raw] 
+[Warning: epoch 45941 not found in raw] 
+[Warning: epoch 45942 not found in raw] 
+[Warning: epoch 45943 not found in raw] 
+[Warning: epoch 45944 not found in raw] 
+[Warning: epoch 45945 not found in raw] 
+[Warning: epoch 45946 not found in raw] 
+[Warning: epoch 45947 not found in raw] 
+[Warning: epoch 45948 not found in raw] 
+[Warning: epoch 45949 not found in raw] 
+[Warning: epoch 45950 not found in raw] 
+[Warning: epoch 45951 not found in raw] 
+[Warning: epoch 45952 not found in raw] 
+[Warning: epoch 45953 not found in raw] 
+[Warning: epoch 45954 not found in raw] 
+[Warning: epoch 45955 not found in raw] 
+[Warning: epoch 45956 not found in raw] 
+[Warning: epoch 45957 not found in raw] 
+[Warning: epoch 45958 not found in raw] 
+[Warning: epoch 45959 not found in raw] 
+[Warning: epoch 45960 not found in raw] 
+[Warning: epoch 45961 not found in raw] 
+[Warning: epoch 45962 not found in raw] 
+[Warning: epoch 45963 not found in raw] 
+[Warning: epoch 45964 not found in raw] 
+[Warning: epoch 45965 not found in raw] 
+[Warning: epoch 45966 not found in raw] 
+[Warning: epoch 45967 not found in raw] 
+[Warning: epoch 45968 not found in raw] 
+[Warning: epoch 45969 not found in raw] 
+[Warning: epoch 45970 not found in raw] 
+[Warning: epoch 45971 not found in raw] 
+[Warning: epoch 45972 not found in raw] 
+[Warning: epoch 45973 not found in raw] 
+[Warning: epoch 45974 not found in raw] 
+[Warning: epoch 45975 not found in raw] 
+[Warning: epoch 45976 not found in raw] 
+[Warning: epoch 45977 not found in raw] 
+[Warning: epoch 45978 not found in raw] 
+[Warning: epoch 45979 not found in raw] 
+[Warning: epoch 45980 not found in raw] 
+[Warning: epoch 45981 not found in raw] 
+[Warning: epoch 45982 not found in raw] 
+[Warning: epoch 45983 not found in raw] 
+[Warning: epoch 45984 not found in raw] 
+[Warning: epoch 45985 not found in raw] 
+[Warning: epoch 45986 not found in raw] 
+[Warning: epoch 45987 not found in raw] 
+[Warning: epoch 45988 not found in raw] 
+[Warning: epoch 45989 not found in raw] 
+[Warning: epoch 45990 not found in raw] 
+[Warning: epoch 45991 not found in raw] 
+[Warning: epoch 45992 not found in raw] 
+[Warning: epoch 45993 not found in raw] 
+[Warning: epoch 45994 not found in raw] 
+[Warning: epoch 45995 not found in raw] 
+[Warning: epoch 45996 not found in raw] 
+[Warning: epoch 45997 not found in raw] 
+[Warning: epoch 45998 not found in raw] 
+[Warning: epoch 45999 not found in raw] 
+[Warning: epoch 46000 not found in raw] 
+[Warning: epoch 46001 not found in raw] 
+[Warning: epoch 46002 not found in raw] 
+[Warning: epoch 46003 not found in raw] 
+[Warning: epoch 46004 not found in raw] 
+[Warning: epoch 46005 not found in raw] 
+[Warning: epoch 46006 not found in raw] 
+[Warning: epoch 46007 not found in raw] 
+[Warning: epoch 46008 not found in raw] 
+[Warning: epoch 46009 not found in raw] 
+[Warning: epoch 46010 not found in raw] 
+[Warning: epoch 46011 not found in raw] 
+[Warning: epoch 46012 not found in raw] 
+[Warning: epoch 46013 not found in raw] 
+[Warning: epoch 46014 not found in raw] 
+[Warning: epoch 46015 not found in raw] 
+[Warning: epoch 46016 not found in raw] 
+[Warning: epoch 46017 not found in raw] 
+[Warning: epoch 46018 not found in raw] 
+[Warning: epoch 46019 not found in raw] 
+[Warning: epoch 46020 not found in raw] 
+[Warning: epoch 46021 not found in raw] 
+[Warning: epoch 46022 not found in raw] 
+[Warning: epoch 46023 not found in raw] 
+[Warning: epoch 46024 not found in raw] 
+[Warning: epoch 46025 not found in raw] 
+[Warning: epoch 46026 not found in raw] 
+[Warning: epoch 46027 not found in raw] 
+[Warning: epoch 46028 not found in raw] 
+[Warning: epoch 46029 not found in raw] 
+[Warning: epoch 46030 not found in raw] 
+[Warning: epoch 46031 not found in raw] 
+[Warning: epoch 46032 not found in raw] 
+[Warning: epoch 46033 not found in raw] 
+[Warning: epoch 46034 not found in raw] 
+[Warning: epoch 46035 not found in raw] 
+[Warning: epoch 46036 not found in raw] 
+[Warning: epoch 46037 not found in raw] 
+[Warning: epoch 46038 not found in raw] 
+[Warning: epoch 46039 not found in raw] 
+[Warning: epoch 46040 not found in raw] 
+[Warning: epoch 46041 not found in raw] 
+[Warning: epoch 46042 not found in raw] 
+[Warning: epoch 46043 not found in raw] 
+[Warning: epoch 46044 not found in raw] 
+[Warning: epoch 46045 not found in raw] 
+[Warning: epoch 46046 not found in raw] 
+[Warning: epoch 46047 not found in raw] 
+[Warning: epoch 46048 not found in raw] 
+[Warning: epoch 46049 not found in raw] 
+[Warning: epoch 46050 not found in raw] 
+[Warning: epoch 46051 not found in raw] 
+[Warning: epoch 46052 not found in raw] 
+[Warning: epoch 46053 not found in raw] 
+[Warning: epoch 46054 not found in raw] 
+[Warning: epoch 46055 not found in raw] 
+[Warning: epoch 46056 not found in raw] 
+[Warning: epoch 46057 not found in raw] 
+[Warning: epoch 46058 not found in raw] 
+[Warning: epoch 46059 not found in raw] 
+[Warning: epoch 46060 not found in raw] 
+[Warning: epoch 46061 not found in raw] 
+[Warning: epoch 46062 not found in raw] 
+[Warning: epoch 46063 not found in raw] 
+[Warning: epoch 46064 not found in raw] 
+[Warning: epoch 46065 not found in raw] 
+[Warning: epoch 46066 not found in raw] 
+[Warning: epoch 46067 not found in raw] 
+[Warning: epoch 46068 not found in raw] 
+[Warning: epoch 46069 not found in raw] 
+[Warning: epoch 46070 not found in raw] 
+[Warning: epoch 46071 not found in raw] 
+[Warning: epoch 46072 not found in raw] 
+[Warning: epoch 46073 not found in raw] 
+[Warning: epoch 46074 not found in raw] 
+[Warning: epoch 46075 not found in raw] 
+[Warning: epoch 46076 not found in raw] 
+[Warning: epoch 46077 not found in raw] 
+[Warning: epoch 46078 not found in raw] 
+[Warning: epoch 46079 not found in raw] 
+[Warning: epoch 46080 not found in raw] 
+[Warning: epoch 46081 not found in raw] 
+[Warning: epoch 46082 not found in raw] 
+[Warning: epoch 46083 not found in raw] 
+[Warning: epoch 46084 not found in raw] 
+[Warning: epoch 46085 not found in raw] 
+[Warning: epoch 46086 not found in raw] 
+[Warning: epoch 46087 not found in raw] 
+[Warning: epoch 46088 not found in raw] 
+[Warning: epoch 46089 not found in raw] 
+[Warning: epoch 46090 not found in raw] 
+[Warning: epoch 46091 not found in raw] 
+[Warning: epoch 46092 not found in raw] 
+[Warning: epoch 46093 not found in raw] 
+[Warning: epoch 46094 not found in raw] 
+[Warning: epoch 46095 not found in raw] 
+[Warning: epoch 46096 not found in raw] 
+[Warning: epoch 46097 not found in raw] 
+[Warning: epoch 46098 not found in raw] 
+[Warning: epoch 46099 not found in raw] 
+[Warning: epoch 46100 not found in raw] 
+[Warning: epoch 46101 not found in raw] 
+[Warning: epoch 46102 not found in raw] 
+[Warning: epoch 46103 not found in raw] 
+[Warning: epoch 46104 not found in raw] 
+[Warning: epoch 46105 not found in raw] 
+[Warning: epoch 46106 not found in raw] 
+[Warning: epoch 46107 not found in raw] 
+[Warning: epoch 46108 not found in raw] 
+[Warning: epoch 46109 not found in raw] 
+[Warning: epoch 46110 not found in raw] 
+[Warning: epoch 46111 not found in raw] 
+[Warning: epoch 46112 not found in raw] 
+[Warning: epoch 46113 not found in raw] 
+[Warning: epoch 46114 not found in raw] 
+[Warning: epoch 46115 not found in raw] 
+[Warning: epoch 46116 not found in raw] 
+[Warning: epoch 46117 not found in raw] 
+[Warning: epoch 46118 not found in raw] 
+[Warning: epoch 46119 not found in raw] 
+[Warning: epoch 46120 not found in raw] 
+[Warning: epoch 46121 not found in raw] 
+[Warning: epoch 46122 not found in raw] 
+[Warning: epoch 46123 not found in raw] 
+[Warning: epoch 46124 not found in raw] 
+[Warning: epoch 46125 not found in raw] 
+[Warning: epoch 46126 not found in raw] 
+[Warning: epoch 46127 not found in raw] 
+[Warning: epoch 46128 not found in raw] 
+[Warning: epoch 46129 not found in raw] 
+[Warning: epoch 46130 not found in raw] 
+[Warning: epoch 46131 not found in raw] 
+[Warning: epoch 46132 not found in raw] 
+[Warning: epoch 46133 not found in raw] 
+[Warning: epoch 46134 not found in raw] 
+[Warning: epoch 46135 not found in raw] 
+[Warning: epoch 46136 not found in raw] 
+[Warning: epoch 46137 not found in raw] 
+[Warning: epoch 46138 not found in raw] 
+[Warning: epoch 46139 not found in raw] 
+[Warning: epoch 46140 not found in raw] 
+[Warning: epoch 46141 not found in raw] 
+[Warning: epoch 46142 not found in raw] 
+[Warning: epoch 46143 not found in raw] 
+[Warning: epoch 46144 not found in raw] 
+[Warning: epoch 46145 not found in raw] 
+[Warning: epoch 46146 not found in raw] 
+[Warning: epoch 46147 not found in raw] 
+[Warning: epoch 46148 not found in raw] 
+[Warning: epoch 46149 not found in raw] 
+[Warning: epoch 46150 not found in raw] 
+[Warning: epoch 46151 not found in raw] 
+[Warning: epoch 46152 not found in raw] 
+[Warning: epoch 46153 not found in raw] 
+[Warning: epoch 46154 not found in raw] 
+[Warning: epoch 46155 not found in raw] 
+[Warning: epoch 46156 not found in raw] 
+[Warning: epoch 46157 not found in raw] 
+[Warning: epoch 46158 not found in raw] 
+[Warning: epoch 46159 not found in raw] 
+[Warning: epoch 46160 not found in raw] 
+[Warning: epoch 46161 not found in raw] 
+[Warning: epoch 46162 not found in raw] 
+[Warning: epoch 46163 not found in raw] 
+[Warning: epoch 46164 not found in raw] 
+[Warning: epoch 46165 not found in raw] 
+[Warning: epoch 46166 not found in raw] 
+[Warning: epoch 46167 not found in raw] 
+[Warning: epoch 46168 not found in raw] 
+[Warning: epoch 46169 not found in raw] 
+[Warning: epoch 46170 not found in raw] 
+[Warning: epoch 46171 not found in raw] 
+[Warning: epoch 46172 not found in raw] 
+[Warning: epoch 46173 not found in raw] 
+[Warning: epoch 46174 not found in raw] 
+[Warning: epoch 46175 not found in raw] 
+[Warning: epoch 46176 not found in raw] 
+[Warning: epoch 46177 not found in raw] 
+[Warning: epoch 46178 not found in raw] 
+[Warning: epoch 46179 not found in raw] 
+[Warning: epoch 46180 not found in raw] 
+[Warning: epoch 46181 not found in raw] 
+[Warning: epoch 46182 not found in raw] 
+[Warning: epoch 46183 not found in raw] 
+[Warning: epoch 46184 not found in raw] 
+[Warning: epoch 46185 not found in raw] 
+[Warning: epoch 46186 not found in raw] 
+[Warning: epoch 46187 not found in raw] 
+[Warning: epoch 46188 not found in raw] 
+[Warning: epoch 46189 not found in raw] 
+[Warning: epoch 46190 not found in raw] 
+[Warning: epoch 46191 not found in raw] 
+[Warning: epoch 46192 not found in raw] 
+[Warning: epoch 46193 not found in raw] 
+[Warning: epoch 46194 not found in raw] 
+[Warning: epoch 46195 not found in raw] 
+[Warning: epoch 46196 not found in raw] 
+[Warning: epoch 46197 not found in raw] 
+[Warning: epoch 46198 not found in raw] 
+[Warning: epoch 46199 not found in raw] 
+[Warning: epoch 46200 not found in raw] 
+[Warning: epoch 46201 not found in raw] 
+[Warning: epoch 46202 not found in raw] 
+[Warning: epoch 46203 not found in raw] 
+[Warning: epoch 46204 not found in raw] 
+[Warning: epoch 46205 not found in raw] 
+[Warning: epoch 46206 not found in raw] 
+[Warning: epoch 46207 not found in raw] 
+[Warning: epoch 46208 not found in raw] 
+[Warning: epoch 46209 not found in raw] 
+[Warning: epoch 46210 not found in raw] 
+[Warning: epoch 46211 not found in raw] 
+[Warning: epoch 46212 not found in raw] 
+[Warning: epoch 46213 not found in raw] 
+[Warning: epoch 46214 not found in raw] 
+[Warning: epoch 46215 not found in raw] 
+[Warning: epoch 46216 not found in raw] 
+[Warning: epoch 46217 not found in raw] 
+[Warning: epoch 46218 not found in raw] 
+[Warning: epoch 46219 not found in raw] 
+[Warning: epoch 46220 not found in raw] 
+[Warning: epoch 46221 not found in raw] 
+[Warning: epoch 46222 not found in raw] 
+[Warning: epoch 46223 not found in raw] 
+[Warning: epoch 46224 not found in raw] 
+[Warning: epoch 46225 not found in raw] 
+[Warning: epoch 46226 not found in raw] 
+[Warning: epoch 46227 not found in raw] 
+[Warning: epoch 46228 not found in raw] 
+[Warning: epoch 46229 not found in raw] 
+[Warning: epoch 46230 not found in raw] 
+[Warning: epoch 46231 not found in raw] 
+[Warning: epoch 46232 not found in raw] 
+[Warning: epoch 46233 not found in raw] 
+[Warning: epoch 46234 not found in raw] 
+[Warning: epoch 46235 not found in raw] 
+[Warning: epoch 46236 not found in raw] 
+[Warning: epoch 46237 not found in raw] 
+[Warning: epoch 46238 not found in raw] 
+[Warning: epoch 46239 not found in raw] 
+[Warning: epoch 46240 not found in raw] 
+[Warning: epoch 46241 not found in raw] 
+[Warning: epoch 46242 not found in raw] 
+[Warning: epoch 46243 not found in raw] 
+[Warning: epoch 46244 not found in raw] 
+[Warning: epoch 46245 not found in raw] 
+[Warning: epoch 46246 not found in raw] 
+[Warning: epoch 46247 not found in raw] 
+[Warning: epoch 46248 not found in raw] 
+[Warning: epoch 46249 not found in raw] 
+[Warning: epoch 46250 not found in raw] 
+[Warning: epoch 46251 not found in raw] 
+[Warning: epoch 46252 not found in raw] 
+[Warning: epoch 46253 not found in raw] 
+[Warning: epoch 46254 not found in raw] 
+[Warning: epoch 46255 not found in raw] 
+[Warning: epoch 46256 not found in raw] 
+[Warning: epoch 46257 not found in raw] 
+[Warning: epoch 46258 not found in raw] 
+[Warning: epoch 46259 not found in raw] 
+[Warning: epoch 46260 not found in raw] 
+[Warning: epoch 46261 not found in raw] 
+[Warning: epoch 46262 not found in raw] 
+[Warning: epoch 46263 not found in raw] 
+[Warning: epoch 46264 not found in raw] 
+[Warning: epoch 46265 not found in raw] 
+[Warning: epoch 46266 not found in raw] 
+[Warning: epoch 46267 not found in raw] 
+[Warning: epoch 46268 not found in raw] 
+[Warning: epoch 46269 not found in raw] 
+[Warning: epoch 46270 not found in raw] 
+[Warning: epoch 46271 not found in raw] 
+[Warning: epoch 46272 not found in raw] 
+[Warning: epoch 46273 not found in raw] 
+[Warning: epoch 46274 not found in raw] 
+[Warning: epoch 46275 not found in raw] 
+[Warning: epoch 46276 not found in raw] 
+[Warning: epoch 46277 not found in raw] 
+[Warning: epoch 46278 not found in raw] 
+[Warning: epoch 46279 not found in raw] 
+[Warning: epoch 46280 not found in raw] 
+[Warning: epoch 46281 not found in raw] 
+[Warning: epoch 46282 not found in raw] 
+[Warning: epoch 46283 not found in raw] 
+[Warning: epoch 46284 not found in raw] 
+[Warning: epoch 46285 not found in raw] 
+[Warning: epoch 46286 not found in raw] 
+[Warning: epoch 46287 not found in raw] 
+[Warning: epoch 46288 not found in raw] 
+[Warning: epoch 46289 not found in raw] 
+[Warning: epoch 46290 not found in raw] 
+[Warning: epoch 46291 not found in raw] 
+[Warning: epoch 46292 not found in raw] 
+[Warning: epoch 46293 not found in raw] 
+[Warning: epoch 46294 not found in raw] 
+[Warning: epoch 46295 not found in raw] 
+[Warning: epoch 46296 not found in raw] 
+[Warning: epoch 46297 not found in raw] 
+[Warning: epoch 46298 not found in raw] 
+[Warning: epoch 46299 not found in raw] 
+[Warning: epoch 46300 not found in raw] 
+[Warning: epoch 46301 not found in raw] 
+[Warning: epoch 46302 not found in raw] 
+[Warning: epoch 46303 not found in raw] 
+[Warning: epoch 46304 not found in raw] 
+[Warning: epoch 46305 not found in raw] 
+[Warning: epoch 46306 not found in raw] 
+[Warning: epoch 46307 not found in raw] 
+[Warning: epoch 46308 not found in raw] 
+[Warning: epoch 46309 not found in raw] 
+[Warning: epoch 46310 not found in raw] 
+[Warning: epoch 46311 not found in raw] 
+[Warning: epoch 46312 not found in raw] 
+[Warning: epoch 46313 not found in raw] 
+[Warning: epoch 46314 not found in raw] 
+[Warning: epoch 46315 not found in raw] 
+[Warning: epoch 46316 not found in raw] 
+[Warning: epoch 46317 not found in raw] 
+[Warning: epoch 46318 not found in raw] 
+[Warning: epoch 46319 not found in raw] 
+[Warning: epoch 46320 not found in raw] 
+[Warning: epoch 46321 not found in raw] 
+[Warning: epoch 46322 not found in raw] 
+[Warning: epoch 46323 not found in raw] 
+[Warning: epoch 46324 not found in raw] 
+[Warning: epoch 46325 not found in raw] 
+[Warning: epoch 46326 not found in raw] 
+[Warning: epoch 46327 not found in raw] 
+[Warning: epoch 46328 not found in raw] 
+[Warning: epoch 46329 not found in raw] 
+[Warning: epoch 46330 not found in raw] 
+[Warning: epoch 46331 not found in raw] 
+[Warning: epoch 46332 not found in raw] 
+[Warning: epoch 46333 not found in raw] 
+[Warning: epoch 46334 not found in raw] 
+[Warning: epoch 46335 not found in raw] 
+[Warning: epoch 46336 not found in raw] 
+[Warning: epoch 46337 not found in raw] 
+[Warning: epoch 46338 not found in raw] 
+[Warning: epoch 46339 not found in raw] 
+[Warning: epoch 46340 not found in raw] 
+[Warning: epoch 46341 not found in raw] 
+[Warning: epoch 46342 not found in raw] 
+[Warning: epoch 46343 not found in raw] 
+[Warning: epoch 46344 not found in raw] 
+[Warning: epoch 46345 not found in raw] 
+[Warning: epoch 46346 not found in raw] 
+[Warning: epoch 46347 not found in raw] 
+[Warning: epoch 46348 not found in raw] 
+[Warning: epoch 46349 not found in raw] 
+[Warning: epoch 46350 not found in raw] 
+[Warning: epoch 46351 not found in raw] 
+[Warning: epoch 46352 not found in raw] 
+[Warning: epoch 46353 not found in raw] 
+[Warning: epoch 46354 not found in raw] 
+[Warning: epoch 46355 not found in raw] 
+[Warning: epoch 46356 not found in raw] 
+[Warning: epoch 46357 not found in raw] 
+[Warning: epoch 46358 not found in raw] 
+[Warning: epoch 46359 not found in raw] 
+[Warning: epoch 46360 not found in raw] 
+[Warning: epoch 46361 not found in raw] 
+[Warning: epoch 46362 not found in raw] 
+[Warning: epoch 46363 not found in raw] 
+[Warning: epoch 46364 not found in raw] 
+[Warning: epoch 46365 not found in raw] 
+[Warning: epoch 46366 not found in raw] 
+[Warning: epoch 46367 not found in raw] 
+[Warning: epoch 46368 not found in raw] 
+[Warning: epoch 46369 not found in raw] 
+[Warning: epoch 46370 not found in raw] 
+[Warning: epoch 46371 not found in raw] 
+[Warning: epoch 46372 not found in raw] 
+[Warning: epoch 46373 not found in raw] 
+[Warning: epoch 46374 not found in raw] 
+[Warning: epoch 46375 not found in raw] 
+[Warning: epoch 46376 not found in raw] 
+[Warning: epoch 46377 not found in raw] 
+[Warning: epoch 46378 not found in raw] 
+[Warning: epoch 46379 not found in raw] 
+[Warning: epoch 46380 not found in raw] 
+[Warning: epoch 46381 not found in raw] 
+[Warning: epoch 46382 not found in raw] 
+[Warning: epoch 46383 not found in raw] 
+[Warning: epoch 46384 not found in raw] 
+[Warning: epoch 46385 not found in raw] 
+[Warning: epoch 46386 not found in raw] 
+[Warning: epoch 46387 not found in raw] 
+[Warning: epoch 46388 not found in raw] 
+[Warning: epoch 46389 not found in raw] 
+[Warning: epoch 46390 not found in raw] 
+[Warning: epoch 46391 not found in raw] 
+[Warning: epoch 46392 not found in raw] 
+[Warning: epoch 46393 not found in raw] 
+[Warning: epoch 46394 not found in raw] 
+[Warning: epoch 46395 not found in raw] 
+[Warning: epoch 46396 not found in raw] 
+[Warning: epoch 46397 not found in raw] 
+[Warning: epoch 46398 not found in raw] 
+[Warning: epoch 46399 not found in raw] 
+[Warning: epoch 46400 not found in raw] 
+[Warning: epoch 46401 not found in raw] 
+[Warning: epoch 46402 not found in raw] 
+[Warning: epoch 46403 not found in raw] 
+[Warning: epoch 46404 not found in raw] 
+[Warning: epoch 46405 not found in raw] 
+[Warning: epoch 46406 not found in raw] 
+[Warning: epoch 46407 not found in raw] 
+[Warning: epoch 46408 not found in raw] 
+[Warning: epoch 46409 not found in raw] 
+[Warning: epoch 46410 not found in raw] 
+[Warning: epoch 46411 not found in raw] 
+[Warning: epoch 46412 not found in raw] 
+[Warning: epoch 46413 not found in raw] 
+[Warning: epoch 46414 not found in raw] 
+[Warning: epoch 46415 not found in raw] 
+[Warning: epoch 46416 not found in raw] 
+[Warning: epoch 46417 not found in raw] 
+[Warning: epoch 46418 not found in raw] 
+[Warning: epoch 46419 not found in raw] 
+[Warning: epoch 46420 not found in raw] 
+[Warning: epoch 46421 not found in raw] 
+[Warning: epoch 46422 not found in raw] 
+[Warning: epoch 46423 not found in raw] 
+[Warning: epoch 46424 not found in raw] 
+[Warning: epoch 46425 not found in raw] 
+[Warning: epoch 46426 not found in raw] 
+[Warning: epoch 46427 not found in raw] 
+[Warning: epoch 46428 not found in raw] 
+[Warning: epoch 46429 not found in raw] 
+[Warning: epoch 46430 not found in raw] 
+[Warning: epoch 46431 not found in raw] 
+[Warning: epoch 46432 not found in raw] 
+[Warning: epoch 46433 not found in raw] 
+[Warning: epoch 46434 not found in raw] 
+[Warning: epoch 46435 not found in raw] 
+[Warning: epoch 46436 not found in raw] 
+[Warning: epoch 46437 not found in raw] 
+[Warning: epoch 46438 not found in raw] 
+[Warning: epoch 46439 not found in raw] 
+[Warning: epoch 46440 not found in raw] 
+[Warning: epoch 46441 not found in raw] 
+[Warning: epoch 46442 not found in raw] 
+[Warning: epoch 46443 not found in raw] 
+[Warning: epoch 46444 not found in raw] 
+[Warning: epoch 46445 not found in raw] 
+[Warning: epoch 46446 not found in raw] 
+[Warning: epoch 46447 not found in raw] 
+[Warning: epoch 46448 not found in raw] 
+[Warning: epoch 46449 not found in raw] 
+[Warning: epoch 46450 not found in raw] 
+[Warning: epoch 46451 not found in raw] 
+[Warning: epoch 46452 not found in raw] 
+[Warning: epoch 46453 not found in raw] 
+[Warning: epoch 46454 not found in raw] 
+[Warning: epoch 46455 not found in raw] 
+[Warning: epoch 46456 not found in raw] 
+[Warning: epoch 46457 not found in raw] 
+[Warning: epoch 46458 not found in raw] 
+[Warning: epoch 46459 not found in raw] 
+[Warning: epoch 46460 not found in raw] 
+[Warning: epoch 46461 not found in raw] 
+[Warning: epoch 46462 not found in raw] 
+[Warning: epoch 46463 not found in raw] 
+[Warning: epoch 46464 not found in raw] 
+[Warning: epoch 46465 not found in raw] 
+[Warning: epoch 46466 not found in raw] 
+[Warning: epoch 46467 not found in raw] 
+[Warning: epoch 46468 not found in raw] 
+[Warning: epoch 46469 not found in raw] 
+[Warning: epoch 46470 not found in raw] 
+[Warning: epoch 46471 not found in raw] 
+[Warning: epoch 46472 not found in raw] 
+[Warning: epoch 46473 not found in raw] 
+[Warning: epoch 46474 not found in raw] 
+[Warning: epoch 46475 not found in raw] 
+[Warning: epoch 46476 not found in raw] 
+[Warning: epoch 46477 not found in raw] 
+[Warning: epoch 46478 not found in raw] 
+[Warning: epoch 46479 not found in raw] 
+[Warning: epoch 46480 not found in raw] 
+[Warning: epoch 46481 not found in raw] 
+[Warning: epoch 46482 not found in raw] 
+[Warning: epoch 46483 not found in raw] 
+[Warning: epoch 46484 not found in raw] 
+[Warning: epoch 46485 not found in raw] 
+[Warning: epoch 46486 not found in raw] 
+[Warning: epoch 46487 not found in raw] 
+[Warning: epoch 46488 not found in raw] 
+[Warning: epoch 46489 not found in raw] 
+[Warning: epoch 46490 not found in raw] 
+[Warning: epoch 46491 not found in raw] 
+[Warning: epoch 46492 not found in raw] 
+[Warning: epoch 46493 not found in raw] 
+[Warning: epoch 46494 not found in raw] 
+[Warning: epoch 46495 not found in raw] 
+[Warning: epoch 46496 not found in raw] 
+[Warning: epoch 46497 not found in raw] 
+[Warning: epoch 46498 not found in raw] 
+[Warning: epoch 46499 not found in raw] 
+[Warning: epoch 46500 not found in raw] 
+[Warning: epoch 46501 not found in raw] 
+[Warning: epoch 46502 not found in raw] 
+[Warning: epoch 46503 not found in raw] 
+[Warning: epoch 46504 not found in raw] 
+[Warning: epoch 46505 not found in raw] 
+[Warning: epoch 46506 not found in raw] 
+[Warning: epoch 46507 not found in raw] 
+[Warning: epoch 46508 not found in raw] 
+[Warning: epoch 46509 not found in raw] 
+[Warning: epoch 46510 not found in raw] 
+[Warning: epoch 46511 not found in raw] 
+[Warning: epoch 46512 not found in raw] 
+[Warning: epoch 46513 not found in raw] 
+[Warning: epoch 46514 not found in raw] 
+[Warning: epoch 46515 not found in raw] 
+[Warning: epoch 46516 not found in raw] 
+[Warning: epoch 46517 not found in raw] 
+[Warning: epoch 46518 not found in raw] 
+[Warning: epoch 46519 not found in raw] 
+[Warning: epoch 46520 not found in raw] 
+[Warning: epoch 46521 not found in raw] 
+[Warning: epoch 46522 not found in raw] 
+[Warning: epoch 46523 not found in raw] 
+[Warning: epoch 46524 not found in raw] 
+[Warning: epoch 46525 not found in raw] 
+[Warning: epoch 46526 not found in raw] 
+[Warning: epoch 46527 not found in raw] 
+[Warning: epoch 46528 not found in raw] 
+[Warning: epoch 46529 not found in raw] 
+[Warning: epoch 46530 not found in raw] 
+[Warning: epoch 46531 not found in raw] 
+[Warning: epoch 46532 not found in raw] 
+[Warning: epoch 46533 not found in raw] 
+[Warning: epoch 46534 not found in raw] 
+[Warning: epoch 46535 not found in raw] 
+[Warning: epoch 46536 not found in raw] 
+[Warning: epoch 46537 not found in raw] 
+[Warning: epoch 46538 not found in raw] 
+[Warning: epoch 46539 not found in raw] 
+[Warning: epoch 46540 not found in raw] 
+[Warning: epoch 46541 not found in raw] 
+[Warning: epoch 46542 not found in raw] 
+[Warning: epoch 46543 not found in raw] 
+[Warning: epoch 46544 not found in raw] 
+[Warning: epoch 46545 not found in raw] 
+[Warning: epoch 46546 not found in raw] 
+[Warning: epoch 46547 not found in raw] 
+[Warning: epoch 46548 not found in raw] 
+[Warning: epoch 46549 not found in raw] 
+[Warning: epoch 46550 not found in raw] 
+[Warning: epoch 46551 not found in raw] 
+[Warning: epoch 46552 not found in raw] 
+[Warning: epoch 46553 not found in raw] 
+[Warning: epoch 46554 not found in raw] 
+[Warning: epoch 46555 not found in raw] 
+[Warning: epoch 46556 not found in raw] 
+[Warning: epoch 46557 not found in raw] 
+[Warning: epoch 46558 not found in raw] 
+[Warning: epoch 46559 not found in raw] 
+[Warning: epoch 46560 not found in raw] 
+[Warning: epoch 46561 not found in raw] 
+[Warning: epoch 46562 not found in raw] 
+[Warning: epoch 46563 not found in raw] 
+[Warning: epoch 46564 not found in raw] 
+[Warning: epoch 46565 not found in raw] 
+[Warning: epoch 46566 not found in raw] 
+[Warning: epoch 46567 not found in raw] 
+[Warning: epoch 46568 not found in raw] 
+[Warning: epoch 46569 not found in raw] 
+[Warning: epoch 46570 not found in raw] 
+[Warning: epoch 46571 not found in raw] 
+[Warning: epoch 46572 not found in raw] 
+[Warning: epoch 46573 not found in raw] 
+[Warning: epoch 46574 not found in raw] 
+[Warning: epoch 46575 not found in raw] 
+[Warning: epoch 46576 not found in raw] 
+[Warning: epoch 46577 not found in raw] 
+[Warning: epoch 46578 not found in raw] 
+[Warning: epoch 46579 not found in raw] 
+[Warning: epoch 46580 not found in raw] 
+[Warning: epoch 46581 not found in raw] 
+[Warning: epoch 46582 not found in raw] 
+[Warning: epoch 46583 not found in raw] 
+[Warning: epoch 46584 not found in raw] 
+[Warning: epoch 46585 not found in raw] 
+[Warning: epoch 46586 not found in raw] 
+[Warning: epoch 46587 not found in raw] 
+[Warning: epoch 46588 not found in raw] 
+[Warning: epoch 46589 not found in raw] 
+[Warning: epoch 46590 not found in raw] 
+[Warning: epoch 46591 not found in raw] 
+[Warning: epoch 46592 not found in raw] 
+[Warning: epoch 46593 not found in raw] 
+[Warning: epoch 46594 not found in raw] 
+[Warning: epoch 46595 not found in raw] 
+[Warning: epoch 46596 not found in raw] 
+[Warning: epoch 46597 not found in raw] 
+[Warning: epoch 46598 not found in raw] 
+[Warning: epoch 46599 not found in raw] 
+[Warning: epoch 46600 not found in raw] 
+[Warning: epoch 46601 not found in raw] 
+[Warning: epoch 46602 not found in raw] 
+[Warning: epoch 46603 not found in raw] 
+[Warning: epoch 46604 not found in raw] 
+[Warning: epoch 46605 not found in raw] 
+[Warning: epoch 46606 not found in raw] 
+[Warning: epoch 46607 not found in raw] 
+[Warning: epoch 46608 not found in raw] 
+[Warning: epoch 46609 not found in raw] 
+[Warning: epoch 46610 not found in raw] 
+[Warning: epoch 46611 not found in raw] 
+[Warning: epoch 46612 not found in raw] 
+[Warning: epoch 46613 not found in raw] 
+[Warning: epoch 46614 not found in raw] 
+[Warning: epoch 46615 not found in raw] 
+[Warning: epoch 46616 not found in raw] 
+[Warning: epoch 46617 not found in raw] 
+[Warning: epoch 46618 not found in raw] 
+[Warning: epoch 46619 not found in raw] 
+[Warning: epoch 46620 not found in raw] 
+[Warning: epoch 46621 not found in raw] 
+[Warning: epoch 46622 not found in raw] 
+[Warning: epoch 46623 not found in raw] 
+[Warning: epoch 46624 not found in raw] 
+[Warning: epoch 46625 not found in raw] 
+[Warning: epoch 46626 not found in raw] 
+[Warning: epoch 46627 not found in raw] 
+[Warning: epoch 46628 not found in raw] 
+[Warning: epoch 46629 not found in raw] 
+[Warning: epoch 46630 not found in raw] 
+[Warning: epoch 46631 not found in raw] 
+[Warning: epoch 46632 not found in raw] 
+[Warning: epoch 46633 not found in raw] 
+[Warning: epoch 46634 not found in raw] 
+[Warning: epoch 46635 not found in raw] 
+[Warning: epoch 46636 not found in raw] 
+[Warning: epoch 46637 not found in raw] 
+[Warning: epoch 46638 not found in raw] 
+[Warning: epoch 46639 not found in raw] 
+[Warning: epoch 46640 not found in raw] 
+[Warning: epoch 46641 not found in raw] 
+[Warning: epoch 46642 not found in raw] 
+[Warning: epoch 46643 not found in raw] 
+[Warning: epoch 46644 not found in raw] 
+[Warning: epoch 46645 not found in raw] 
+[Warning: epoch 46646 not found in raw] 
+[Warning: epoch 46647 not found in raw] 
+[Warning: epoch 46648 not found in raw] 
+[Warning: epoch 46649 not found in raw] 
+[Warning: epoch 46650 not found in raw] 
+[Warning: epoch 46651 not found in raw] 
+[Warning: epoch 46652 not found in raw] 
+[Warning: epoch 46653 not found in raw] 
+[Warning: epoch 46654 not found in raw] 
+[Warning: epoch 46655 not found in raw] 
+[Warning: epoch 46656 not found in raw] 
+[Warning: epoch 46657 not found in raw] 
+[Warning: epoch 46658 not found in raw] 
+[Warning: epoch 46659 not found in raw] 
+[Warning: epoch 46660 not found in raw] 
+[Warning: epoch 46661 not found in raw] 
+[Warning: epoch 46662 not found in raw] 
+[Warning: epoch 46663 not found in raw] 
+[Warning: epoch 46664 not found in raw] 
+[Warning: epoch 46665 not found in raw] 
+[Warning: epoch 46666 not found in raw] 
+[Warning: epoch 46667 not found in raw] 
+[Warning: epoch 46668 not found in raw] 
+[Warning: epoch 46669 not found in raw] 
+[Warning: epoch 46670 not found in raw] 
+[Warning: epoch 46671 not found in raw] 
+[Warning: epoch 46672 not found in raw] 
+[Warning: epoch 46673 not found in raw] 
+[Warning: epoch 46674 not found in raw] 
+[Warning: epoch 46675 not found in raw] 
+[Warning: epoch 46676 not found in raw] 
+[Warning: epoch 46677 not found in raw] 
+[Warning: epoch 46678 not found in raw] 
+[Warning: epoch 46679 not found in raw] 
+[Warning: epoch 46680 not found in raw] 
+[Warning: epoch 46681 not found in raw] 
+[Warning: epoch 46682 not found in raw] 
+[Warning: epoch 46683 not found in raw] 
+[Warning: epoch 46684 not found in raw] 
+[Warning: epoch 46685 not found in raw] 
+[Warning: epoch 46686 not found in raw] 
+[Warning: epoch 46687 not found in raw] 
+[Warning: epoch 46688 not found in raw] 
+[Warning: epoch 46689 not found in raw] 
+[Warning: epoch 46690 not found in raw] 
+[Warning: epoch 46691 not found in raw] 
+[Warning: epoch 46692 not found in raw] 
+[Warning: epoch 46693 not found in raw] 
+[Warning: epoch 46694 not found in raw] 
+[Warning: epoch 46695 not found in raw] 
+[Warning: epoch 46696 not found in raw] 
+[Warning: epoch 46697 not found in raw] 
+[Warning: epoch 46698 not found in raw] 
+[Warning: epoch 46699 not found in raw] 
+[Warning: epoch 46700 not found in raw] 
+[Warning: epoch 46701 not found in raw] 
+[Warning: epoch 46702 not found in raw] 
+[Warning: epoch 46703 not found in raw] 
+[Warning: epoch 46704 not found in raw] 
+[Warning: epoch 46705 not found in raw] 
+[Warning: epoch 46706 not found in raw] 
+[Warning: epoch 46707 not found in raw] 
+[Warning: epoch 46708 not found in raw] 
+[Warning: epoch 46709 not found in raw] 
+[Warning: epoch 46710 not found in raw] 
+[Warning: epoch 46711 not found in raw] 
+[Warning: epoch 46712 not found in raw] 
+[Warning: epoch 46713 not found in raw] 
+[Warning: epoch 46714 not found in raw] 
+[Warning: epoch 46715 not found in raw] 
+[Warning: epoch 46716 not found in raw] 
+[Warning: epoch 46717 not found in raw] 
+[Warning: epoch 46718 not found in raw] 
+[Warning: epoch 46719 not found in raw] 
+[Warning: epoch 46720 not found in raw] 
+[Warning: epoch 46721 not found in raw] 
+[Warning: epoch 46722 not found in raw] 
+[Warning: epoch 46723 not found in raw] 
+[Warning: epoch 46724 not found in raw] 
+[Warning: epoch 46725 not found in raw] 
+[Warning: epoch 46726 not found in raw] 
+[Warning: epoch 46727 not found in raw] 
+[Warning: epoch 46728 not found in raw] 
+[Warning: epoch 46729 not found in raw] 
+[Warning: epoch 46730 not found in raw] 
+[Warning: epoch 46731 not found in raw] 
+[Warning: epoch 46732 not found in raw] 
+[Warning: epoch 46733 not found in raw] 
+[Warning: epoch 46734 not found in raw] 
+[Warning: epoch 46735 not found in raw] 
+[Warning: epoch 46736 not found in raw] 
+[Warning: epoch 46737 not found in raw] 
+[Warning: epoch 46738 not found in raw] 
+[Warning: epoch 46739 not found in raw] 
+[Warning: epoch 46740 not found in raw] 
+[Warning: epoch 46741 not found in raw] 
+[Warning: epoch 46742 not found in raw] 
+[Warning: epoch 46743 not found in raw] 
+[Warning: epoch 46744 not found in raw] 
+[Warning: epoch 46745 not found in raw] 
+[Warning: epoch 46746 not found in raw] 
+[Warning: epoch 46747 not found in raw] 
+[Warning: epoch 46748 not found in raw] 
+[Warning: epoch 46749 not found in raw] 
+[Warning: epoch 46750 not found in raw] 
+[Warning: epoch 46751 not found in raw] 
+[Warning: epoch 46752 not found in raw] 
+[Warning: epoch 46753 not found in raw] 
+[Warning: epoch 46754 not found in raw] 
+[Warning: epoch 46755 not found in raw] 
+[Warning: epoch 46756 not found in raw] 
+[Warning: epoch 46757 not found in raw] 
+[Warning: epoch 46758 not found in raw] 
+[Warning: epoch 46759 not found in raw] 
+[Warning: epoch 46760 not found in raw] 
+[Warning: epoch 46761 not found in raw] 
+[Warning: epoch 46762 not found in raw] 
+[Warning: epoch 46763 not found in raw] 
+[Warning: epoch 46764 not found in raw] 
+[Warning: epoch 46765 not found in raw] 
+[Warning: epoch 46766 not found in raw] 
+[Warning: epoch 46767 not found in raw] 
+[Warning: epoch 46768 not found in raw] 
+[Warning: epoch 46769 not found in raw] 
+[Warning: epoch 46770 not found in raw] 
+[Warning: epoch 46771 not found in raw] 
+[Warning: epoch 46772 not found in raw] 
+[Warning: epoch 46773 not found in raw] 
+[Warning: epoch 46774 not found in raw] 
+[Warning: epoch 46775 not found in raw] 
+[Warning: epoch 46776 not found in raw] 
+[Warning: epoch 46777 not found in raw] 
+[Warning: epoch 46778 not found in raw] 
+[Warning: epoch 46779 not found in raw] 
+[Warning: epoch 46780 not found in raw] 
+[Warning: epoch 46781 not found in raw] 
+[Warning: epoch 46782 not found in raw] 
+[Warning: epoch 46783 not found in raw] 
+[Warning: epoch 46784 not found in raw] 
+[Warning: epoch 46785 not found in raw] 
+[Warning: epoch 46786 not found in raw] 
+[Warning: epoch 46787 not found in raw] 
+[Warning: epoch 46788 not found in raw] 
+[Warning: epoch 46789 not found in raw] 
+[Warning: epoch 46790 not found in raw] 
+[Warning: epoch 46791 not found in raw] 
+[Warning: epoch 46792 not found in raw] 
+[Warning: epoch 46793 not found in raw] 
+[Warning: epoch 46794 not found in raw] 
+[Warning: epoch 46795 not found in raw] 
+[Warning: epoch 46796 not found in raw] 
+[Warning: epoch 46797 not found in raw] 
+[Warning: epoch 46798 not found in raw] 
+[Warning: epoch 46799 not found in raw] 
+[Warning: epoch 46800 not found in raw] 
+[Warning: epoch 46801 not found in raw] 
+[Warning: epoch 46802 not found in raw] 
+[Warning: epoch 46803 not found in raw] 
+[Warning: epoch 46804 not found in raw] 
+[Warning: epoch 46805 not found in raw] 
+[Warning: epoch 46806 not found in raw] 
+[Warning: epoch 46807 not found in raw] 
+[Warning: epoch 46808 not found in raw] 
+[Warning: epoch 46809 not found in raw] 
+[Warning: epoch 46810 not found in raw] 
+[Warning: epoch 46811 not found in raw] 
+[Warning: epoch 46812 not found in raw] 
+[Warning: epoch 46813 not found in raw] 
+[Warning: epoch 46814 not found in raw] 
+[Warning: epoch 46815 not found in raw] 
+[Warning: epoch 46816 not found in raw] 
+[Warning: epoch 46817 not found in raw] 
+[Warning: epoch 46818 not found in raw] 
+[Warning: epoch 46819 not found in raw] 
+[Warning: epoch 46820 not found in raw] 
+[Warning: epoch 46821 not found in raw] 
+[Warning: epoch 46822 not found in raw] 
+[Warning: epoch 46823 not found in raw] 
+[Warning: epoch 46824 not found in raw] 
+[Warning: epoch 46825 not found in raw] 
+[Warning: epoch 46826 not found in raw] 
+[Warning: epoch 46827 not found in raw] 
+[Warning: epoch 46828 not found in raw] 
+[Warning: epoch 46829 not found in raw] 
+[Warning: epoch 46830 not found in raw] 
+[Warning: epoch 46831 not found in raw] 
+[Warning: epoch 46832 not found in raw] 
+[Warning: epoch 46833 not found in raw] 
+[Warning: epoch 95289 not found in raw] 
+[Warning: epoch 95290 not found in raw] 
+[Warning: epoch 95291 not found in raw] 
+[Warning: epoch 95292 not found in raw] 
+[Warning: epoch 95293 not found in raw] 
+[Warning: epoch 95294 not found in raw] 
+[Warning: epoch 95295 not found in raw] 
+[Warning: epoch 95296 not found in raw] 
+[Warning: epoch 95297 not found in raw] 
+[Warning: epoch 95298 not found in raw] 
+[Warning: epoch 95299 not found in raw] 
+[Warning: epoch 95300 not found in raw] 
+[Warning: epoch 95301 not found in raw] 
+[Warning: epoch 95302 not found in raw] 
+[Warning: epoch 95303 not found in raw] 
+[Warning: epoch 95304 not found in raw] 
+[Warning: epoch 95305 not found in raw] 
+[Warning: epoch 95306 not found in raw] 
+[Warning: epoch 95307 not found in raw] 
+[Warning: epoch 95308 not found in raw] 
+[Warning: epoch 95309 not found in raw] 
+[Warning: epoch 95310 not found in raw] 
+[Warning: epoch 95311 not found in raw] 
+[Warning: epoch 95312 not found in raw] 
+[Warning: epoch 95313 not found in raw] 
+[Warning: epoch 95314 not found in raw] 
+[Warning: epoch 95315 not found in raw] 
+[Warning: epoch 95316 not found in raw] 
+[Warning: epoch 95317 not found in raw] 
+[Warning: epoch 95318 not found in raw] 
+[Warning: epoch 95319 not found in raw] 
+[Warning: epoch 95320 not found in raw] 
+[Warning: epoch 95321 not found in raw] 
+[Warning: epoch 95322 not found in raw] 
+[Warning: epoch 95323 not found in raw] 
+[Warning: epoch 95324 not found in raw] 
+[Warning: epoch 95325 not found in raw] 
+[Warning: epoch 95326 not found in raw] 
+[Warning: epoch 95327 not found in raw] 
+[Warning: epoch 95328 not found in raw] 
+[Warning: epoch 95329 not found in raw] 
+[Warning: epoch 95330 not found in raw] 
+[Warning: epoch 95331 not found in raw] 
+[Warning: epoch 95332 not found in raw] 
+[Warning: epoch 95333 not found in raw] 
+[Warning: epoch 95334 not found in raw] 
+[Warning: epoch 95335 not found in raw] 
+[Warning: epoch 95336 not found in raw] 
+[Warning: epoch 95337 not found in raw] 
+[Warning: epoch 95338 not found in raw] 
+[Warning: epoch 95339 not found in raw] 
+[Warning: epoch 95340 not found in raw] 
+[Warning: epoch 95341 not found in raw] 
+[Warning: epoch 95342 not found in raw] 
+[Warning: epoch 95343 not found in raw] 
+[Warning: epoch 95344 not found in raw] 
+[Warning: epoch 95345 not found in raw] 
+[Warning: epoch 95346 not found in raw] 
+[Warning: epoch 95347 not found in raw] 
+[Warning: epoch 95348 not found in raw] 
+[Warning: epoch 95349 not found in raw] 
+[Warning: epoch 95350 not found in raw] 
+[Warning: epoch 95351 not found in raw] 
+[Warning: epoch 95352 not found in raw] 
+[Warning: epoch 95353 not found in raw] 
+[Warning: epoch 95354 not found in raw] 
+[Warning: epoch 95355 not found in raw] 
+[Warning: epoch 95356 not found in raw] 
+[Warning: epoch 95357 not found in raw] 
+[Warning: epoch 95358 not found in raw] 
+[Warning: epoch 95359 not found in raw] 
+[Warning: epoch 95360 not found in raw] 
+[Warning: epoch 95361 not found in raw] 
+[Warning: epoch 95362 not found in raw] 
+[Warning: epoch 95363 not found in raw] 
+[Warning: epoch 95364 not found in raw] 
+[Warning: epoch 95365 not found in raw] 
+[Warning: epoch 95366 not found in raw] 
+[Warning: epoch 95367 not found in raw] 
+[Warning: epoch 95368 not found in raw] 
+[Warning: epoch 95369 not found in raw] 
+[Warning: epoch 95370 not found in raw] 
+[Warning: epoch 95371 not found in raw] 
+[Warning: epoch 95372 not found in raw] 
+[Warning: epoch 95373 not found in raw] 
+[Warning: epoch 95374 not found in raw] 
+[Warning: epoch 95375 not found in raw] 
+[Warning: epoch 95376 not found in raw] 
+[Warning: epoch 95377 not found in raw] 
+[Warning: epoch 95378 not found in raw] 
+[Warning: epoch 95379 not found in raw] 
+[Warning: epoch 95380 not found in raw] 
+[Warning: epoch 95381 not found in raw] 
+[Warning: epoch 95382 not found in raw] 
+[Warning: epoch 95383 not found in raw] 
+[Warning: epoch 95384 not found in raw] 
+[Warning: epoch 95385 not found in raw] 
+[Warning: epoch 95386 not found in raw] 
+[Warning: epoch 95387 not found in raw] 
+[Warning: epoch 95388 not found in raw] 
+[Warning: epoch 95389 not found in raw] 
+[Warning: epoch 95390 not found in raw] 
+[Warning: epoch 95391 not found in raw] 
+[Warning: epoch 95392 not found in raw] 
+[Warning: epoch 95393 not found in raw] 
+[Warning: epoch 95394 not found in raw] 
+[Warning: epoch 95395 not found in raw] 
+[Warning: epoch 95396 not found in raw] 
+[Warning: epoch 95397 not found in raw] 
+[Warning: epoch 95398 not found in raw] 
+[Warning: epoch 95399 not found in raw] 
+[Warning: epoch 95400 not found in raw] 
+[Warning: epoch 95401 not found in raw] 
+[Warning: epoch 95402 not found in raw] 
+[Warning: epoch 95403 not found in raw] 
+[Warning: epoch 95404 not found in raw] 
+[Warning: epoch 95405 not found in raw] 
+[Warning: epoch 95406 not found in raw] 
+[Warning: epoch 95407 not found in raw] 
+[Warning: epoch 95408 not found in raw] 
+[Warning: epoch 95409 not found in raw] 
+[Warning: epoch 95410 not found in raw] 
+[Warning: epoch 95411 not found in raw] 
+[Warning: epoch 95412 not found in raw] 
+[Warning: epoch 95413 not found in raw] 
+[Warning: epoch 95414 not found in raw] 
+[Warning: epoch 95415 not found in raw] 
+[Warning: epoch 95416 not found in raw] 
+[Warning: epoch 95417 not found in raw] 
+[Warning: epoch 95418 not found in raw] 
+[Warning: epoch 95419 not found in raw] 
+[Warning: epoch 95420 not found in raw] 
+[Warning: epoch 95421 not found in raw] 
+[Warning: epoch 95422 not found in raw] 
+[Warning: epoch 95423 not found in raw] 
+[Warning: epoch 95424 not found in raw] 
+[Warning: epoch 95425 not found in raw] 
+[Warning: epoch 95426 not found in raw] 
+[Warning: epoch 95427 not found in raw] 
+[Warning: epoch 95428 not found in raw] 
+[Warning: epoch 95429 not found in raw] 
+[Warning: epoch 95430 not found in raw] 
+[Warning: epoch 95431 not found in raw] 
+[Warning: epoch 95432 not found in raw] 
+[Warning: epoch 95433 not found in raw] 
+[Warning: epoch 95434 not found in raw] 
+[Warning: epoch 95435 not found in raw] 
+[Warning: epoch 95436 not found in raw] 
+[Warning: epoch 95437 not found in raw] 
+[Warning: epoch 95438 not found in raw] 
+[Warning: epoch 95439 not found in raw] 
+[Warning: epoch 95440 not found in raw] 
+[Warning: epoch 95441 not found in raw] 
+[Warning: epoch 95442 not found in raw] 
+[Warning: epoch 95443 not found in raw] 
+[Warning: epoch 95444 not found in raw] 
+[Warning: epoch 95445 not found in raw] 
+[Warning: epoch 95446 not found in raw] 
+[Warning: epoch 95447 not found in raw] 
+[Warning: epoch 95448 not found in raw] 
+[Warning: epoch 95449 not found in raw] 
+[Warning: epoch 95450 not found in raw] 
+[Warning: epoch 95451 not found in raw] 
+[Warning: epoch 95452 not found in raw] 
+[Warning: epoch 95453 not found in raw] 
+[Warning: epoch 95454 not found in raw] 
+[Warning: epoch 95455 not found in raw] 
+[Warning: epoch 95456 not found in raw] 
+[Warning: epoch 95457 not found in raw] 
+[Warning: epoch 95458 not found in raw] 
+[Warning: epoch 95459 not found in raw] 
+[Warning: epoch 95460 not found in raw] 
+[Warning: epoch 95461 not found in raw] 
+[Warning: epoch 95462 not found in raw] 
+[Warning: epoch 95463 not found in raw] 
+[Warning: epoch 95464 not found in raw] 
+[Warning: epoch 95465 not found in raw] 
+[Warning: epoch 95466 not found in raw] 
+[Warning: epoch 95467 not found in raw] 
+[Warning: epoch 95468 not found in raw] 
+[Warning: epoch 95469 not found in raw] 
+[Warning: epoch 95470 not found in raw] 
+[Warning: epoch 95471 not found in raw] 
+[Warning: epoch 95472 not found in raw] 
+[Warning: epoch 95473 not found in raw] 
+[Warning: epoch 95474 not found in raw] 
+[Warning: epoch 95475 not found in raw] 
+[Warning: epoch 95476 not found in raw] 
+[Warning: epoch 95477 not found in raw] 
+[Warning: epoch 95478 not found in raw] 
+[Warning: epoch 95479 not found in raw] 
+[Warning: epoch 95480 not found in raw] 
+[Warning: epoch 95481 not found in raw] 
+[Warning: epoch 95482 not found in raw] 
+[Warning: epoch 95483 not found in raw] 
+[Warning: epoch 95484 not found in raw] 
+[Warning: epoch 95485 not found in raw] 
+[Warning: epoch 95486 not found in raw] 
+[Warning: epoch 95487 not found in raw] 
+[Warning: epoch 95488 not found in raw] 
+[Warning: epoch 95489 not found in raw] 
+[Warning: epoch 95490 not found in raw] 
+[Warning: epoch 95491 not found in raw] 
+[Warning: epoch 95492 not found in raw] 
+[Warning: epoch 95493 not found in raw] 
+[Warning: epoch 95494 not found in raw] 
+[Warning: epoch 95495 not found in raw] 
+[Warning: epoch 95496 not found in raw] 
+[Warning: epoch 95497 not found in raw] 
+[Warning: epoch 95498 not found in raw] 
+[Warning: epoch 95499 not found in raw] 
+[Warning: epoch 95500 not found in raw] 
+[Warning: epoch 95501 not found in raw] 
+[Warning: epoch 95502 not found in raw] 
+[Warning: epoch 95503 not found in raw] 
+[Warning: epoch 95504 not found in raw] 
+[Warning: epoch 95505 not found in raw] 
+[Warning: epoch 95506 not found in raw] 
+[Warning: epoch 95507 not found in raw] 
+[Warning: epoch 95508 not found in raw] 
+[Warning: epoch 95509 not found in raw] 
+[Warning: epoch 95510 not found in raw] 
+[Warning: epoch 95511 not found in raw] 
+[Warning: epoch 95512 not found in raw] 
+[Warning: epoch 95513 not found in raw] 
+[Warning: epoch 95514 not found in raw] 
+[Warning: epoch 95515 not found in raw] 
+[Warning: epoch 95516 not found in raw] 
+[Warning: epoch 95517 not found in raw] 
+[Warning: epoch 95518 not found in raw] 
+[Warning: epoch 95519 not found in raw] 
+[Warning: epoch 95520 not found in raw] 
+[Warning: epoch 95521 not found in raw] 
+[Warning: epoch 95522 not found in raw] 
+[Warning: epoch 95523 not found in raw] 
+[Warning: epoch 95524 not found in raw] 
+[Warning: epoch 95525 not found in raw] 
+[Warning: epoch 95526 not found in raw] 
+[Warning: epoch 95527 not found in raw] 
+[Warning: epoch 95528 not found in raw] 
+[Warning: epoch 95529 not found in raw] 
+[Warning: epoch 95530 not found in raw] 
+[Warning: epoch 95531 not found in raw] 
+[Warning: epoch 95532 not found in raw] 
+[Warning: epoch 95533 not found in raw] 
+[Warning: epoch 95534 not found in raw] 
+[Warning: epoch 95535 not found in raw] 
+[Warning: epoch 95536 not found in raw] 
+[Warning: epoch 95537 not found in raw] 
+[Warning: epoch 95538 not found in raw] 
+[Warning: epoch 95539 not found in raw] 
+[Warning: epoch 95540 not found in raw] 
+[Warning: epoch 95541 not found in raw] 
+[Warning: epoch 95542 not found in raw] 
+[Warning: epoch 95543 not found in raw] 
+[Warning: epoch 95544 not found in raw] 
+[Warning: epoch 95545 not found in raw] 
+[Warning: epoch 95546 not found in raw] 
+[Warning: epoch 95547 not found in raw] 
+[Warning: epoch 95548 not found in raw] 
+[Warning: epoch 95549 not found in raw] 
+[Warning: epoch 95550 not found in raw] 
+[Warning: epoch 95551 not found in raw] 
+[Warning: epoch 95552 not found in raw] 
+[Warning: epoch 95553 not found in raw] 
+[Warning: epoch 95554 not found in raw] 
+[Warning: epoch 95555 not found in raw] 
+[Warning: epoch 95556 not found in raw] 
+[Warning: epoch 95557 not found in raw] 
+[Warning: epoch 95558 not found in raw] 
+[Warning: epoch 95559 not found in raw] 
+[Warning: epoch 95560 not found in raw] 
+[Warning: epoch 95561 not found in raw] 
+[Warning: epoch 95562 not found in raw] 
+[Warning: epoch 95563 not found in raw] 
+[Warning: epoch 95564 not found in raw] 
+[Warning: epoch 95565 not found in raw] 
+[Warning: epoch 95566 not found in raw] 
+[Warning: epoch 95567 not found in raw] 
+[Warning: epoch 95568 not found in raw] 
+[Warning: epoch 95569 not found in raw] 
+[Warning: epoch 95570 not found in raw] 
+[Warning: epoch 95571 not found in raw] 
+[Warning: epoch 95572 not found in raw] 
+[Warning: epoch 95573 not found in raw] 
+[Warning: epoch 95574 not found in raw] 
+[Warning: epoch 95575 not found in raw] 
+[Warning: epoch 95576 not found in raw] 
+[Warning: epoch 95577 not found in raw] 
+[Warning: epoch 95578 not found in raw] 
+[Warning: epoch 95579 not found in raw] 
+[Warning: epoch 95580 not found in raw] 
+[Warning: epoch 95581 not found in raw] 
+[Warning: epoch 95582 not found in raw] 
+[Warning: epoch 95583 not found in raw] 
+[Warning: epoch 95584 not found in raw] 
+[Warning: epoch 95585 not found in raw] 
+[Warning: epoch 95586 not found in raw] 
+[Warning: epoch 95587 not found in raw] 
+[Warning: epoch 95588 not found in raw] 
+[Warning: epoch 95589 not found in raw] 
+[Warning: epoch 95590 not found in raw] 
+[Warning: epoch 95591 not found in raw] 
+[Warning: epoch 95592 not found in raw] 
+[Warning: epoch 95593 not found in raw] 
+[Warning: epoch 95594 not found in raw] 
+[Warning: epoch 95595 not found in raw] 
+[Warning: epoch 95596 not found in raw] 
+[Warning: epoch 95597 not found in raw] 
+[Warning: epoch 95598 not found in raw] 
+[Warning: epoch 95599 not found in raw] 
+[Warning: epoch 95600 not found in raw] 
+[Warning: epoch 95601 not found in raw] 
+[Warning: epoch 95602 not found in raw] 
+[Warning: epoch 95603 not found in raw] 
+[Warning: epoch 95604 not found in raw] 
+[Warning: epoch 95605 not found in raw] 
+[Warning: epoch 95606 not found in raw] 
+[Warning: epoch 95607 not found in raw] 
+[Warning: epoch 95608 not found in raw] 
+[Warning: epoch 95609 not found in raw] 
+[Warning: epoch 95610 not found in raw] 
+[Warning: epoch 95611 not found in raw] 
+[Warning: epoch 95612 not found in raw] 
+[Warning: epoch 95613 not found in raw] 
+[Warning: epoch 95614 not found in raw] 
+[Warning: epoch 95615 not found in raw] 
+[Warning: epoch 95616 not found in raw] 
+[Warning: epoch 95617 not found in raw] 
+[Warning: epoch 95618 not found in raw] 
+[Warning: epoch 95619 not found in raw] 
+[Warning: epoch 95620 not found in raw] 
+[Warning: epoch 95621 not found in raw] 
+[Warning: epoch 95622 not found in raw] 
+[Warning: epoch 95623 not found in raw] 
+[Warning: epoch 95624 not found in raw] 
+[Warning: epoch 95625 not found in raw] 
+[Warning: epoch 95626 not found in raw] 
+[Warning: epoch 95627 not found in raw] 
+[Warning: epoch 95628 not found in raw] 
+[Warning: epoch 95629 not found in raw] 
+[Warning: epoch 95630 not found in raw] 
+[Warning: epoch 95631 not found in raw] 
+[Warning: epoch 95632 not found in raw] 
+[Warning: epoch 95633 not found in raw] 
+[Warning: epoch 95634 not found in raw] 
+[Warning: epoch 95635 not found in raw] 
+[Warning: epoch 95636 not found in raw] 
+[Warning: epoch 95637 not found in raw] 
+[Warning: epoch 95638 not found in raw] 
+FAILED: Array indices must be positive integers or logical values.
+Running protocol.audio_p coherence analysis for subject DBS4068 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 28 seconds and required the additional allocation of an estimated 2122 MB
+Binary calculation across channels and epochs.
+[Warning: removing 3784 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS4069 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 11 seconds and required the additional allocation of an estimated 457 MB
+Binary calculation across channels and epochs.
+[Warning: removing 1408 rows with nans] 
+Obtaining unique epochs...
+OK
+Running protocol.audio_p coherence analysis for subject DBS4070 
+[Warning: the trial definition in the configuration is inconsistent with the
+actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 25 seconds and required the additional allocation of an estimated 5 MB
+Binary calculation across channels and epochs.
+[Warning: removing 6480 rows with nans] 
+Obtaining unique epochs...
+[Warning: epoch 1 not found in raw] 
+[Warning: epoch 2 not found in raw] 
+[Warning: epoch 3 not found in raw] 
+[Warning: epoch 4 not found in raw] 
+[Warning: epoch 5 not found in raw] 
+[Warning: epoch 6 not found in raw] 
+[Warning: epoch 7 not found in raw] 
+[Warning: epoch 8 not found in raw] 
+[Warning: epoch 9 not found in raw] 
+[Warning: epoch 10 not found in raw] 
+[Warning: epoch 11 not found in raw] 
+[Warning: epoch 12 not found in raw] 
+[Warning: epoch 13 not found in raw] 
+[Warning: epoch 14 not found in raw] 
+[Warning: epoch 15 not found in raw] 
+[Warning: epoch 16 not found in raw] 
+[Warning: epoch 17 not found in raw] 
+[Warning: epoch 18 not found in raw] 
+[Warning: epoch 19 not found in raw] 
+[Warning: epoch 20 not found in raw] 
+[Warning: epoch 21 not found in raw] 
+[Warning: epoch 22 not found in raw] 
+[Warning: epoch 23 not found in raw] 
+[Warning: epoch 24 not found in raw] 
+[Warning: epoch 25 not found in raw] 
+[Warning: epoch 26 not found in raw] 
+[Warning: epoch 27 not found in raw] 
+[Warning: epoch 28 not found in raw] 
+[Warning: epoch 29 not found in raw] 
+[Warning: epoch 30 not found in raw] 
+[Warning: epoch 31 not found in raw] 
+[Warning: epoch 32 not found in raw] 
+[Warning: epoch 33 not found in raw] 
+[Warning: epoch 34 not found in raw] 
+[Warning: epoch 35 not found in raw] 
+[Warning: epoch 36 not found in raw] 
+[Warning: epoch 37 not found in raw] 
+[Warning: epoch 38 not found in raw] 
+[Warning: epoch 39 not found in raw] 
+[Warning: epoch 40 not found in raw] 
+[Warning: epoch 41 not found in raw] 
+[Warning: epoch 42 not found in raw] 
+[Warning: epoch 43 not found in raw] 
+[Warning: epoch 44 not found in raw] 
+[Warning: epoch 45 not found in raw] 
+[Warning: epoch 46 not found in raw] 
+[Warning: epoch 47 not found in raw] 
+[Warning: epoch 48 not found in raw] 
+[Warning: epoch 49 not found in raw] 
+[Warning: epoch 50 not found in raw] 
+[Warning: epoch 51 not found in raw] 
+[Warning: epoch 52 not found in raw] 
+[Warning: epoch 53 not found in raw] 
+[Warning: epoch 54 not found in raw] 
+[Warning: epoch 55 not found in raw] 
+[Warning: epoch 56 not found in raw] 
+[Warning: epoch 57 not found in raw] 
+[Warning: epoch 58 not found in raw] 
+[Warning: epoch 59 not found in raw] 
+[Warning: epoch 60 not found in raw] 
+[Warning: epoch 61 not found in raw] 
+[Warning: epoch 62 not found in raw] 
+[Warning: epoch 63 not found in raw] 
+[Warning: epoch 64 not found in raw] 
+[Warning: epoch 65 not found in raw] 
+[Warning: epoch 66 not found in raw] 
+[Warning: epoch 67 not found in raw] 
+[Warning: epoch 68 not found in raw] 
+[Warning: epoch 69 not found in raw] 
+[Warning: epoch 70 not found in raw] 
+[Warning: epoch 71 not found in raw] 
+[Warning: epoch 72 not found in raw] 
+[Warning: epoch 73 not found in raw] 
+[Warning: epoch 74 not found in raw] 
+[Warning: epoch 75 not found in raw] 
+[Warning: epoch 76 not found in raw] 
+[Warning: epoch 77 not found in raw] 
+[Warning: epoch 78 not found in raw] 
+[Warning: epoch 79 not found in raw] 
+[Warning: epoch 80 not found in raw] 
+[Warning: epoch 81 not found in raw] 
+[Warning: epoch 82 not found in raw] 
+[Warning: epoch 83 not found in raw] 
+[Warning: epoch 84 not found in raw] 
+[Warning: epoch 85 not found in raw] 
+[Warning: epoch 86 not found in raw] 
+[Warning: epoch 87 not found in raw] 
+[Warning: epoch 88 not found in raw] 
+[Warning: epoch 89 not found in raw] 
+[Warning: epoch 90 not found in raw] 
+[Warning: epoch 91 not found in raw] 
+[Warning: epoch 92 not found in raw] 
+[Warning: epoch 93 not found in raw] 
+[Warning: epoch 94 not found in raw] 
+[Warning: epoch 95 not found in raw] 
+[Warning: epoch 96 not found in raw] 
+[Warning: epoch 97 not found in raw] 
+[Warning: epoch 98 not found in raw] 
+[Warning: epoch 99 not found in raw] 
+[Warning: epoch 100 not found in raw] 
+[Warning: epoch 101 not found in raw] 
+[Warning: epoch 102 not found in raw] 
+[Warning: epoch 103 not found in raw] 
+[Warning: epoch 104 not found in raw] 
+[Warning: epoch 105 not found in raw] 
+[Warning: epoch 106 not found in raw] 
+[Warning: epoch 107 not found in raw] 
+[Warning: epoch 108 not found in raw] 
+[Warning: epoch 109 not found in raw] 
+[Warning: epoch 110 not found in raw] 
+[Warning: epoch 111 not found in raw] 
+[Warning: epoch 112 not found in raw] 
+[Warning: epoch 113 not found in raw] 
+[Warning: epoch 114 not found in raw] 
+[Warning: epoch 115 not found in raw] 
+[Warning: epoch 116 not found in raw] 
+[Warning: epoch 117 not found in raw] 
+[Warning: epoch 118 not found in raw] 
+[Warning: epoch 119 not found in raw] 
+[Warning: epoch 120 not found in raw] 
+[Warning: epoch 121 not found in raw] 
+[Warning: epoch 122 not found in raw] 
+[Warning: epoch 123 not found in raw] 
+[Warning: epoch 124 not found in raw] 
+[Warning: epoch 125 not found in raw] 
+[Warning: epoch 126 not found in raw] 
+[Warning: epoch 127 not found in raw] 
+[Warning: epoch 128 not found in raw] 
+[Warning: epoch 129 not found in raw] 
+[Warning: epoch 130 not found in raw] 
+[Warning: epoch 131 not found in raw] 
+[Warning: epoch 132 not found in raw] 
+[Warning: epoch 133 not found in raw] 
+[Warning: epoch 134 not found in raw] 
+[Warning: epoch 135 not found in raw] 
+[Warning: epoch 136 not found in raw] 
+[Warning: epoch 137 not found in raw] 
+[Warning: epoch 138 not found in raw] 
+[Warning: epoch 139 not found in raw] 
+[Warning: epoch 140 not found in raw] 
+[Warning: epoch 141 not found in raw] 
+[Warning: epoch 142 not found in raw] 
+[Warning: epoch 143 not found in raw] 
+[Warning: epoch 144 not found in raw] 
+[Warning: epoch 145 not found in raw] 
+[Warning: epoch 146 not found in raw] 
+[Warning: epoch 147 not found in raw] 
+[Warning: epoch 148 not found in raw] 
+[Warning: epoch 149 not found in raw] 
+[Warning: epoch 150 not found in raw] 
+[Warning: epoch 151 not found in raw] 
+[Warning: epoch 152 not found in raw] 
+[Warning: epoch 153 not found in raw] 
+[Warning: epoch 154 not found in raw] 
+[Warning: epoch 155 not found in raw] 
+[Warning: epoch 156 not found in raw] 
+[Warning: epoch 157 not found in raw] 
+[Warning: epoch 158 not found in raw] 
+[Warning: epoch 159 not found in raw] 
+[Warning: epoch 160 not found in raw] 
+[Warning: epoch 161 not found in raw] 
+[Warning: epoch 162 not found in raw] 
+[Warning: epoch 163 not found in raw] 
+[Warning: epoch 164 not found in raw] 
+[Warning: epoch 165 not found in raw] 
+[Warning: epoch 166 not found in raw] 
+[Warning: epoch 167 not found in raw] 
+[Warning: epoch 168 not found in raw] 
+[Warning: epoch 169 not found in raw] 
+[Warning: epoch 170 not found in raw] 
+[Warning: epoch 171 not found in raw] 
+[Warning: epoch 172 not found in raw] 
+[Warning: epoch 173 not found in raw] 
+[Warning: epoch 174 not found in raw] 
+[Warning: epoch 175 not found in raw] 
+[Warning: epoch 176 not found in raw] 
+[Warning: epoch 177 not found in raw] 
+[Warning: epoch 178 not found in raw] 
+[Warning: epoch 179 not found in raw] 
+[Warning: epoch 180 not found in raw] 
+[Warning: epoch 181 not found in raw] 
+[Warning: epoch 182 not found in raw] 
+[Warning: epoch 183 not found in raw] 
+[Warning: epoch 184 not found in raw] 
+[Warning: epoch 185 not found in raw] 
+[Warning: epoch 186 not found in raw] 
+[Warning: epoch 187 not found in raw] 
+[Warning: epoch 188 not found in raw] 
+[Warning: epoch 189 not found in raw] 
+[Warning: epoch 190 not found in raw] 
+[Warning: epoch 191 not found in raw] 
+[Warning: epoch 192 not found in raw] 
+[Warning: epoch 193 not found in raw] 
+[Warning: epoch 194 not found in raw] 
+[Warning: epoch 195 not found in raw] 
+[Warning: epoch 196 not found in raw] 
+[Warning: epoch 197 not found in raw] 
+[Warning: epoch 198 not found in raw] 
+[Warning: epoch 199 not found in raw] 
+[Warning: epoch 200 not found in raw] 
+[Warning: epoch 201 not found in raw] 
+[Warning: epoch 202 not found in raw] 
+[Warning: epoch 203 not found in raw] 
+[Warning: epoch 204 not found in raw] 
+[Warning: epoch 205 not found in raw] 
+[Warning: epoch 206 not found in raw] 
+[Warning: epoch 207 not found in raw] 
+[Warning: epoch 208 not found in raw] 
+[Warning: epoch 209 not found in raw] 
+[Warning: epoch 210 not found in raw] 
+[Warning: epoch 211 not found in raw] 
+[Warning: epoch 212 not found in raw] 
+[Warning: epoch 213 not found in raw] 
+[Warning: epoch 214 not found in raw] 
+[Warning: epoch 215 not found in raw] 
+[Warning: epoch 216 not found in raw] 
+[Warning: epoch 217 not found in raw] 
+[Warning: epoch 218 not found in raw] 
+[Warning: epoch 219 not found in raw] 
+[Warning: epoch 220 not found in raw] 
+[Warning: epoch 221 not found in raw] 
+[Warning: epoch 222 not found in raw] 
+[Warning: epoch 223 not found in raw] 
+[Warning: epoch 224 not found in raw] 
+[Warning: epoch 225 not found in raw] 
+[Warning: epoch 226 not found in raw] 
+[Warning: epoch 227 not found in raw] 
+[Warning: epoch 228 not found in raw] 
+[Warning: epoch 229 not found in raw] 
+[Warning: epoch 230 not found in raw] 
+[Warning: epoch 231 not found in raw] 
+[Warning: epoch 232 not found in raw] 
+[Warning: epoch 233 not found in raw] 
+[Warning: epoch 234 not found in raw] 
+[Warning: epoch 235 not found in raw] 
+[Warning: epoch 236 not found in raw] 
+[Warning: epoch 237 not found in raw] 
+[Warning: epoch 238 not found in raw] 
+[Warning: epoch 239 not found in raw] 
+[Warning: epoch 240 not found in raw] 
+[Warning: epoch 241 not found in raw] 
+[Warning: epoch 242 not found in raw] 
+[Warning: epoch 243 not found in raw] 
+[Warning: epoch 244 not found in raw] 
+[Warning: epoch 245 not found in raw] 
+[Warning: epoch 246 not found in raw] 
+[Warning: epoch 247 not found in raw] 
+[Warning: epoch 248 not found in raw] 
+[Warning: epoch 249 not found in raw] 
+[Warning: epoch 250 not found in raw] 
+[Warning: epoch 251 not found in raw] 
+[Warning: epoch 252 not found in raw] 
+[Warning: epoch 253 not found in raw] 
+[Warning: epoch 254 not found in raw] 
+[Warning: epoch 255 not found in raw] 
+[Warning: epoch 256 not found in raw] 
+[Warning: epoch 257 not found in raw] 
+[Warning: epoch 258 not found in raw] 
+[Warning: epoch 259 not found in raw] 
+[Warning: epoch 260 not found in raw] 
+[Warning: epoch 261 not found in raw] 
+[Warning: epoch 262 not found in raw] 
+[Warning: epoch 263 not found in raw] 
+[Warning: epoch 264 not found in raw] 
+[Warning: epoch 265 not found in raw] 
+[Warning: epoch 266 not found in raw] 
+[Warning: epoch 267 not found in raw] 
+[Warning: epoch 268 not found in raw] 
+[Warning: epoch 269 not found in raw] 
+[Warning: epoch 270 not found in raw] 
+[Warning: epoch 271 not found in raw] 
+[Warning: epoch 272 not found in raw] 
+[Warning: epoch 273 not found in raw] 
+[Warning: epoch 274 not found in raw] 
+[Warning: epoch 275 not found in raw] 
+[Warning: epoch 276 not found in raw] 
+[Warning: epoch 277 not found in raw] 
+[Warning: epoch 278 not found in raw] 
+[Warning: epoch 279 not found in raw] 
+[Warning: epoch 280 not found in raw] 
+[Warning: epoch 281 not found in raw] 
+[Warning: epoch 282 not found in raw] 
+[Warning: epoch 283 not found in raw] 
+[Warning: epoch 284 not found in raw] 
+[Warning: epoch 285 not found in raw] 
+[Warning: epoch 286 not found in raw] 
+[Warning: epoch 287 not found in raw] 
+[Warning: epoch 288 not found in raw] 
+[Warning: epoch 289 not found in raw] 
+[Warning: epoch 290 not found in raw] 
+[Warning: epoch 291 not found in raw] 
+[Warning: epoch 292 not found in raw] 
+[Warning: epoch 293 not found in raw] 
+[Warning: epoch 294 not found in raw] 
+[Warning: epoch 295 not found in raw] 
+[Warning: epoch 296 not found in raw] 
+[Warning: epoch 297 not found in raw] 
+[Warning: epoch 298 not found in raw] 
+[Warning: epoch 299 not found in raw] 
+[Warning: epoch 300 not found in raw] 
+[Warning: epoch 301 not found in raw] 
+[Warning: epoch 302 not found in raw] 
+[Warning: epoch 303 not found in raw] 
+[Warning: epoch 304 not found in raw] 
+[Warning: epoch 305 not found in raw] 
+[Warning: epoch 306 not found in raw] 
+[Warning: epoch 307 not found in raw] 
+[Warning: epoch 308 not found in raw] 
+[Warning: epoch 309 not found in raw] 
+[Warning: epoch 310 not found in raw] 
+[Warning: epoch 311 not found in raw] 
+[Warning: epoch 312 not found in raw] 
+[Warning: epoch 313 not found in raw] 
+[Warning: epoch 314 not found in raw] 
+[Warning: epoch 315 not found in raw] 
+[Warning: epoch 316 not found in raw] 
+[Warning: epoch 317 not found in raw] 
+[Warning: epoch 318 not found in raw] 
+[Warning: epoch 319 not found in raw] 
+[Warning: epoch 320 not found in raw] 
+[Warning: epoch 321 not found in raw] 
+[Warning: epoch 322 not found in raw] 
+[Warning: epoch 323 not found in raw] 
+[Warning: epoch 324 not found in raw] 
+[Warning: epoch 325 not found in raw] 
+[Warning: epoch 326 not found in raw] 
+[Warning: epoch 327 not found in raw] 
+[Warning: epoch 328 not found in raw] 
+[Warning: epoch 329 not found in raw] 
+[Warning: epoch 330 not found in raw] 
+[Warning: epoch 331 not found in raw] 
+[Warning: epoch 332 not found in raw] 
+[Warning: epoch 333 not found in raw] 
+[Warning: epoch 334 not found in raw] 
+[Warning: epoch 335 not found in raw] 
+[Warning: epoch 336 not found in raw] 
+[Warning: epoch 337 not found in raw] 
+[Warning: epoch 338 not found in raw] 
+[Warning: epoch 339 not found in raw] 
+[Warning: epoch 340 not found in raw] 
+[Warning: epoch 341 not found in raw] 
+[Warning: epoch 342 not found in raw] 
+[Warning: epoch 343 not found in raw] 
+[Warning: epoch 344 not found in raw] 
+[Warning: epoch 345 not found in raw] 
+[Warning: epoch 346 not found in raw] 
+[Warning: epoch 347 not found in raw] 
+[Warning: epoch 348 not found in raw] 
+[Warning: epoch 349 not found in raw] 
+[Warning: epoch 350 not found in raw] 
+[Warning: epoch 351 not found in raw] 
+[Warning: epoch 352 not found in raw] 
+[Warning: epoch 353 not found in raw] 
+[Warning: epoch 354 not found in raw] 
+[Warning: epoch 355 not found in raw] 
+[Warning: epoch 356 not found in raw] 
+[Warning: epoch 357 not found in raw] 
+[Warning: epoch 358 not found in raw] 
+[Warning: epoch 359 not found in raw] 
+[Warning: epoch 360 not found in raw] 
+[Warning: epoch 361 not found in raw] 
+[Warning: epoch 362 not found in raw] 
+[Warning: epoch 363 not found in raw] 
+[Warning: epoch 364 not found in raw] 
+[Warning: epoch 365 not found in raw] 
+[Warning: epoch 366 not found in raw] 
+[Warning: epoch 367 not found in raw] 
+[Warning: epoch 368 not found in raw] 
+[Warning: epoch 369 not found in raw] 
+[Warning: epoch 370 not found in raw] 
+[Warning: epoch 371 not found in raw] 
+[Warning: epoch 372 not found in raw] 
+[Warning: epoch 373 not found in raw] 
+[Warning: epoch 374 not found in raw] 
+[Warning: epoch 375 not found in raw] 
+[Warning: epoch 376 not found in raw] 
+[Warning: epoch 377 not found in raw] 
+[Warning: epoch 378 not found in raw] 
+[Warning: epoch 379 not found in raw] 
+[Warning: epoch 380 not found in raw] 
+[Warning: epoch 381 not found in raw] 
+[Warning: epoch 382 not found in raw] 
+[Warning: epoch 383 not found in raw] 
+[Warning: epoch 384 not found in raw] 
+[Warning: epoch 385 not found in raw] 
+[Warning: epoch 386 not found in raw] 
+[Warning: epoch 387 not found in raw] 
+[Warning: epoch 388 not found in raw] 
+[Warning: epoch 389 not found in raw] 
+[Warning: epoch 390 not found in raw] 
+[Warning: epoch 391 not found in raw] 
+[Warning: epoch 392 not found in raw] 
+[Warning: epoch 393 not found in raw] 
+[Warning: epoch 394 not found in raw] 
+[Warning: epoch 395 not found in raw] 
+[Warning: epoch 396 not found in raw] 
+[Warning: epoch 397 not found in raw] 
+[Warning: epoch 398 not found in raw] 
+[Warning: epoch 399 not found in raw] 
+[Warning: epoch 400 not found in raw] 
+[Warning: epoch 401 not found in raw] 
+[Warning: epoch 402 not found in raw] 
+[Warning: epoch 403 not found in raw] 
+[Warning: epoch 404 not found in raw] 
+[Warning: epoch 405 not found in raw] 
+[Warning: epoch 406 not found in raw] 
+[Warning: epoch 407 not found in raw] 
+[Warning: epoch 408 not found in raw] 
+[Warning: epoch 409 not found in raw] 
+[Warning: epoch 410 not found in raw] 
+[Warning: epoch 411 not found in raw] 
+[Warning: epoch 412 not found in raw] 
+[Warning: epoch 413 not found in raw] 
+[Warning: epoch 414 not found in raw] 
+[Warning: epoch 415 not found in raw] 
+[Warning: epoch 416 not found in raw] 
+[Warning: epoch 417 not found in raw] 
+[Warning: epoch 418 not found in raw] 
+[Warning: epoch 419 not found in raw] 
+[Warning: epoch 420 not found in raw] 
+[Warning: epoch 421 not found in raw] 
+[Warning: epoch 422 not found in raw] 
+[Warning: epoch 423 not found in raw] 
+[Warning: epoch 424 not found in raw] 
+[Warning: epoch 425 not found in raw] 
+[Warning: epoch 426 not found in raw] 
+[Warning: epoch 427 not found in raw] 
+[Warning: epoch 428 not found in raw] 
+[Warning: epoch 429 not found in raw] 
+[Warning: epoch 430 not found in raw] 
+[Warning: epoch 431 not found in raw] 
+[Warning: epoch 432 not found in raw] 
+[Warning: epoch 433 not found in raw] 
+[Warning: epoch 434 not found in raw] 
+[Warning: epoch 435 not found in raw] 
+[Warning: epoch 436 not found in raw] 
+[Warning: epoch 437 not found in raw] 
+[Warning: epoch 438 not found in raw] 
+[Warning: epoch 439 not found in raw] 
+[Warning: epoch 440 not found in raw] 
+[Warning: epoch 441 not found in raw] 
+[Warning: epoch 442 not found in raw] 
+[Warning: epoch 443 not found in raw] 
+[Warning: epoch 444 not found in raw] 
+[Warning: epoch 445 not found in raw] 
+[Warning: epoch 446 not found in raw] 
+[Warning: epoch 447 not found in raw] 
+[Warning: epoch 448 not found in raw] 
+[Warning: epoch 449 not found in raw] 
+[Warning: epoch 450 not found in raw] 
+[Warning: epoch 451 not found in raw] 
+[Warning: epoch 452 not found in raw] 
+[Warning: epoch 453 not found in raw] 
+[Warning: epoch 454 not found in raw] 
+[Warning: epoch 455 not found in raw] 
+[Warning: epoch 456 not found in raw] 
+[Warning: epoch 457 not found in raw] 
+[Warning: epoch 458 not found in raw] 
+[Warning: epoch 459 not found in raw] 
+[Warning: epoch 460 not found in raw] 
+[Warning: epoch 461 not found in raw] 
+[Warning: epoch 462 not found in raw] 
+[Warning: epoch 463 not found in raw] 
+[Warning: epoch 464 not found in raw] 
+[Warning: epoch 465 not found in raw] 
+[Warning: epoch 466 not found in raw] 
+[Warning: epoch 467 not found in raw] 
+[Warning: epoch 468 not found in raw] 
+[Warning: epoch 469 not found in raw] 
+[Warning: epoch 470 not found in raw] 
+[Warning: epoch 471 not found in raw] 
+[Warning: epoch 472 not found in raw] 
+[Warning: epoch 473 not found in raw] 
+[Warning: epoch 474 not found in raw] 
+[Warning: epoch 475 not found in raw] 
+[Warning: epoch 476 not found in raw] 
+[Warning: epoch 477 not found in raw] 
+[Warning: epoch 478 not found in raw] 
+[Warning: epoch 479 not found in raw] 
+[Warning: epoch 480 not found in raw] 
+[Warning: epoch 481 not found in raw] 
+[Warning: epoch 482 not found in raw] 
+[Warning: epoch 483 not found in raw] 
+[Warning: epoch 484 not found in raw] 
+[Warning: epoch 485 not found in raw] 
+[Warning: epoch 486 not found in raw] 
+[Warning: epoch 487 not found in raw] 
+[Warning: epoch 488 not found in raw] 
+[Warning: epoch 489 not found in raw] 
+[Warning: epoch 490 not found in raw] 
+[Warning: epoch 491 not found in raw] 
+[Warning: epoch 492 not found in raw] 
+[Warning: epoch 493 not found in raw] 
+[Warning: epoch 494 not found in raw] 
+[Warning: epoch 495 not found in raw] 
+[Warning: epoch 496 not found in raw] 
+[Warning: epoch 497 not found in raw] 
+[Warning: epoch 498 not found in raw] 
+[Warning: epoch 499 not found in raw] 
+[Warning: epoch 500 not found in raw] 
+[Warning: epoch 501 not found in raw] 
+[Warning: epoch 502 not found in raw] 
+[Warning: epoch 503 not found in raw] 
+[Warning: epoch 504 not found in raw] 
+[Warning: epoch 505 not found in raw] 
+[Warning: epoch 506 not found in raw] 
+[Warning: epoch 507 not found in raw] 
+[Warning: epoch 508 not found in raw] 
+[Warning: epoch 509 not found in raw] 
+[Warning: epoch 510 not found in raw] 
+[Warning: epoch 511 not found in raw] 
+[Warning: epoch 512 not found in raw] 
+[Warning: epoch 513 not found in raw] 
+[Warning: epoch 514 not found in raw] 
+[Warning: epoch 515 not found in raw] 
+[Warning: epoch 516 not found in raw] 
+[Warning: epoch 517 not found in raw] 
+[Warning: epoch 518 not found in raw] 
+[Warning: epoch 519 not found in raw] 
+[Warning: epoch 520 not found in raw] 
+[Warning: epoch 521 not found in raw] 
+[Warning: epoch 522 not found in raw] 
+[Warning: epoch 523 not found in raw] 
+[Warning: epoch 524 not found in raw] 
+[Warning: epoch 525 not found in raw] 
+[Warning: epoch 526 not found in raw] 
+[Warning: epoch 527 not found in raw] 
+[Warning: epoch 528 not found in raw] 
+[Warning: epoch 529 not found in raw] 
+[Warning: epoch 530 not found in raw] 
+[Warning: epoch 531 not found in raw] 
+[Warning: epoch 532 not found in raw] 
+[Warning: epoch 533 not found in raw] 
+[Warning: epoch 534 not found in raw] 
+[Warning: epoch 535 not found in raw] 
+[Warning: epoch 536 not found in raw] 
+[Warning: epoch 537 not found in raw] 
+[Warning: epoch 538 not found in raw] 
+[Warning: epoch 539 not found in raw] 
+[Warning: epoch 540 not found in raw] 
+[Warning: epoch 541 not found in raw] 
+[Warning: epoch 542 not found in raw] 
+[Warning: epoch 543 not found in raw] 
+[Warning: epoch 544 not found in raw] 
+[Warning: epoch 545 not found in raw] 
+[Warning: epoch 546 not found in raw] 
+[Warning: epoch 547 not found in raw] 
+[Warning: epoch 548 not found in raw] 
+[Warning: epoch 549 not found in raw] 
+[Warning: epoch 550 not found in raw] 
+[Warning: epoch 551 not found in raw] 
+[Warning: epoch 552 not found in raw] 
+[Warning: epoch 553 not found in raw] 
+[Warning: epoch 554 not found in raw] 
+[Warning: epoch 555 not found in raw] 
+[Warning: epoch 556 not found in raw] 
+[Warning: epoch 557 not found in raw] 
+[Warning: epoch 558 not found in raw] 
+[Warning: epoch 559 not found in raw] 
+[Warning: epoch 560 not found in raw] 
+[Warning: epoch 561 not found in raw] 
+[Warning: epoch 562 not found in raw] 
+[Warning: epoch 563 not found in raw] 
+[Warning: epoch 564 not found in raw] 
+[Warning: epoch 565 not found in raw] 
+[Warning: epoch 566 not found in raw] 
+[Warning: epoch 567 not found in raw] 
+[Warning: epoch 568 not found in raw] 
+[Warning: epoch 569 not found in raw] 
+[Warning: epoch 570 not found in raw] 
+[Warning: epoch 571 not found in raw] 
+[Warning: epoch 572 not found in raw] 
+[Warning: epoch 573 not found in raw] 
+[Warning: epoch 574 not found in raw] 
+[Warning: epoch 575 not found in raw] 
+[Warning: epoch 576 not found in raw] 
+[Warning: epoch 577 not found in raw] 
+[Warning: epoch 578 not found in raw] 
+[Warning: epoch 579 not found in raw] 
+[Warning: epoch 580 not found in raw] 
+[Warning: epoch 581 not found in raw] 
+[Warning: epoch 582 not found in raw] 
+[Warning: epoch 583 not found in raw] 
+[Warning: epoch 584 not found in raw] 
+[Warning: epoch 585 not found in raw] 
+[Warning: epoch 586 not found in raw] 
+[Warning: epoch 587 not found in raw] 
+[Warning: epoch 588 not found in raw] 
+[Warning: epoch 589 not found in raw] 
+[Warning: epoch 590 not found in raw] 
+[Warning: epoch 591 not found in raw] 
+[Warning: epoch 592 not found in raw] 
+[Warning: epoch 593 not found in raw] 
+[Warning: epoch 594 not found in raw] 
+[Warning: epoch 595 not found in raw] 
+[Warning: epoch 596 not found in raw] 
+[Warning: epoch 597 not found in raw] 
+[Warning: epoch 598 not found in raw] 
+[Warning: epoch 599 not found in raw] 
+[Warning: epoch 600 not found in raw] 
+[Warning: epoch 601 not found in raw] 
+[Warning: epoch 602 not found in raw] 
+[Warning: epoch 603 not found in raw] 
+[Warning: epoch 604 not found in raw] 
+[Warning: epoch 605 not found in raw] 
+[Warning: epoch 606 not found in raw] 
+[Warning: epoch 607 not found in raw] 
+[Warning: epoch 608 not found in raw] 
+[Warning: epoch 609 not found in raw] 
+[Warning: epoch 610 not found in raw] 
+[Warning: epoch 611 not found in raw] 
+[Warning: epoch 612 not found in raw] 
+[Warning: epoch 613 not found in raw] 
+[Warning: epoch 614 not found in raw] 
+[Warning: epoch 615 not found in raw] 
+[Warning: epoch 616 not found in raw] 
+[Warning: epoch 617 not found in raw] 
+[Warning: epoch 618 not found in raw] 
+[Warning: epoch 619 not found in raw] 
+[Warning: epoch 620 not found in raw] 
+[Warning: epoch 621 not found in raw] 
+[Warning: epoch 622 not found in raw] 
+[Warning: epoch 623 not found in raw] 
+[Warning: epoch 624 not found in raw] 
+[Warning: epoch 625 not found in raw] 
+[Warning: epoch 626 not found in raw] 
+[Warning: epoch 627 not found in raw] 
+[Warning: epoch 628 not found in raw] 
+[Warning: epoch 629 not found in raw] 
+[Warning: epoch 630 not found in raw] 
+[Warning: epoch 631 not found in raw] 
+[Warning: epoch 632 not found in raw] 
+[Warning: epoch 633 not found in raw] 
+[Warning: epoch 634 not found in raw] 
+[Warning: epoch 635 not found in raw] 
+[Warning: epoch 636 not found in raw] 
+[Warning: epoch 637 not found in raw] 
+[Warning: epoch 638 not found in raw] 
+[Warning: epoch 639 not found in raw] 
+[Warning: epoch 640 not found in raw] 
+[Warning: epoch 641 not found in raw] 
+[Warning: epoch 642 not found in raw] 
+[Warning: epoch 643 not found in raw] 
+[Warning: epoch 644 not found in raw] 
+[Warning: epoch 645 not found in raw] 
+[Warning: epoch 646 not found in raw] 
+[Warning: epoch 647 not found in raw] 
+[Warning: epoch 648 not found in raw] 
+[Warning: epoch 649 not found in raw] 
+[Warning: epoch 650 not found in raw] 
+[Warning: epoch 651 not found in raw] 
+[Warning: epoch 652 not found in raw] 
+[Warning: epoch 653 not found in raw] 
+[Warning: epoch 654 not found in raw] 
+[Warning: epoch 655 not found in raw] 
+[Warning: epoch 656 not found in raw] 
+[Warning: epoch 657 not found in raw] 
+[Warning: epoch 658 not found in raw] 
+[Warning: epoch 659 not found in raw] 
+[Warning: epoch 660 not found in raw] 
+[Warning: epoch 661 not found in raw] 
+[Warning: epoch 662 not found in raw] 
+[Warning: epoch 663 not found in raw] 
+[Warning: epoch 664 not found in raw] 
+[Warning: epoch 665 not found in raw] 
+[Warning: epoch 666 not found in raw] 
+[Warning: epoch 667 not found in raw] 
+[Warning: epoch 668 not found in raw] 
+[Warning: epoch 669 not found in raw] 
+[Warning: epoch 670 not found in raw] 
+[Warning: epoch 671 not found in raw] 
+[Warning: epoch 672 not found in raw] 
+[Warning: epoch 673 not found in raw] 
+[Warning: epoch 674 not found in raw] 
+[Warning: epoch 675 not found in raw] 
+[Warning: epoch 676 not found in raw] 
+[Warning: epoch 677 not found in raw] 
+[Warning: epoch 678 not found in raw] 
+[Warning: epoch 679 not found in raw] 
+[Warning: epoch 680 not found in raw] 
+[Warning: epoch 681 not found in raw] 
+[Warning: epoch 682 not found in raw] 
+[Warning: epoch 683 not found in raw] 
+[Warning: epoch 684 not found in raw] 
+[Warning: epoch 685 not found in raw] 
+[Warning: epoch 686 not found in raw] 
+[Warning: epoch 687 not found in raw] 
+[Warning: epoch 688 not found in raw] 
+[Warning: epoch 689 not found in raw] 
+[Warning: epoch 690 not found in raw] 
+[Warning: epoch 691 not found in raw] 
+[Warning: epoch 692 not found in raw] 
+[Warning: epoch 693 not found in raw] 
+[Warning: epoch 694 not found in raw] 
+[Warning: epoch 695 not found in raw] 
+[Warning: epoch 696 not found in raw] 
+[Warning: epoch 697 not found in raw] 
+[Warning: epoch 698 not found in raw] 
+[Warning: epoch 699 not found in raw] 
+[Warning: epoch 700 not found in raw] 
+[Warning: epoch 701 not found in raw] 
+[Warning: epoch 702 not found in raw] 
+[Warning: epoch 703 not found in raw] 
+[Warning: epoch 704 not found in raw] 
+[Warning: epoch 705 not found in raw] 
+[Warning: epoch 706 not found in raw] 
+[Warning: epoch 707 not found in raw] 
+[Warning: epoch 708 not found in raw] 
+[Warning: epoch 709 not found in raw] 
+[Warning: epoch 710 not found in raw] 
+[Warning: epoch 711 not found in raw] 
+[Warning: epoch 712 not found in raw] 
+[Warning: epoch 713 not found in raw] 
+[Warning: epoch 714 not found in raw] 
+[Warning: epoch 715 not found in raw] 
+[Warning: epoch 716 not found in raw] 
+[Warning: epoch 717 not found in raw] 
+[Warning: epoch 718 not found in raw] 
+[Warning: epoch 719 not found in raw] 
+[Warning: epoch 720 not found in raw] 
+[Warning: epoch 721 not found in raw] 
+[Warning: epoch 722 not found in raw] 
+[Warning: epoch 723 not found in raw] 
+[Warning: epoch 724 not found in raw] 
+[Warning: epoch 725 not found in raw] 
+[Warning: epoch 726 not found in raw] 
+[Warning: epoch 727 not found in raw] 
+[Warning: epoch 728 not found in raw] 
+[Warning: epoch 729 not found in raw] 
+[Warning: epoch 730 not found in raw] 
+[Warning: epoch 731 not found in raw] 
+[Warning: epoch 732 not found in raw] 
+[Warning: epoch 733 not found in raw] 
+[Warning: epoch 734 not found in raw] 
+[Warning: epoch 735 not found in raw] 
+[Warning: epoch 736 not found in raw] 
+[Warning: epoch 737 not found in raw] 
+[Warning: epoch 738 not found in raw] 
+[Warning: epoch 739 not found in raw] 
+[Warning: epoch 740 not found in raw] 
+[Warning: epoch 741 not found in raw] 
+[Warning: epoch 742 not found in raw] 
+[Warning: epoch 743 not found in raw] 
+[Warning: epoch 744 not found in raw] 
+[Warning: epoch 745 not found in raw] 
+[Warning: epoch 746 not found in raw] 
+[Warning: epoch 747 not found in raw] 
+[Warning: epoch 748 not found in raw] 
+[Warning: epoch 749 not found in raw] 
+[Warning: epoch 750 not found in raw] 
+[Warning: epoch 751 not found in raw] 
+[Warning: epoch 752 not found in raw] 
+[Warning: epoch 753 not found in raw] 
+[Warning: epoch 754 not found in raw] 
+[Warning: epoch 755 not found in raw] 
+[Warning: epoch 756 not found in raw] 
+[Warning: epoch 757 not found in raw] 
+[Warning: epoch 758 not found in raw] 
+[Warning: epoch 759 not found in raw] 
+[Warning: epoch 760 not found in raw] 
+[Warning: epoch 761 not found in raw] 
+[Warning: epoch 762 not found in raw] 
+[Warning: epoch 763 not found in raw] 
+[Warning: epoch 764 not found in raw] 
+[Warning: epoch 765 not found in raw] 
+[Warning: epoch 766 not found in raw] 
+[Warning: epoch 767 not found in raw] 
+[Warning: epoch 768 not found in raw] 
+[Warning: epoch 769 not found in raw] 
+[Warning: epoch 770 not found in raw] 
+[Warning: epoch 771 not found in raw] 
+[Warning: epoch 772 not found in raw] 
+[Warning: epoch 773 not found in raw] 
+[Warning: epoch 774 not found in raw] 
+[Warning: epoch 775 not found in raw] 
+[Warning: epoch 776 not found in raw] 
+[Warning: epoch 777 not found in raw] 
+[Warning: epoch 778 not found in raw] 
+[Warning: epoch 779 not found in raw] 
+[Warning: epoch 780 not found in raw] 
+[Warning: epoch 781 not found in raw] 
+[Warning: epoch 782 not found in raw] 
+[Warning: epoch 783 not found in raw] 
+[Warning: epoch 784 not found in raw] 
+[Warning: epoch 785 not found in raw] 
+[Warning: epoch 786 not found in raw] 
+[Warning: epoch 787 not found in raw] 
+[Warning: epoch 788 not found in raw] 
+[Warning: epoch 789 not found in raw] 
+[Warning: epoch 790 not found in raw] 
+[Warning: epoch 791 not found in raw] 
+[Warning: epoch 792 not found in raw] 
+[Warning: epoch 793 not found in raw] 
+[Warning: epoch 794 not found in raw] 
+[Warning: epoch 795 not found in raw] 
+[Warning: epoch 796 not found in raw] 
+[Warning: epoch 797 not found in raw] 
+[Warning: epoch 798 not found in raw] 
+[Warning: epoch 799 not found in raw] 
+[Warning: epoch 800 not found in raw] 
+[Warning: epoch 801 not found in raw] 
+[Warning: epoch 802 not found in raw] 
+[Warning: epoch 803 not found in raw] 
+[Warning: epoch 804 not found in raw] 
+[Warning: epoch 805 not found in raw] 
+[Warning: epoch 806 not found in raw] 
+[Warning: epoch 807 not found in raw] 
+[Warning: epoch 808 not found in raw] 
+[Warning: epoch 809 not found in raw] 
+[Warning: epoch 810 not found in raw] 
+[Warning: epoch 811 not found in raw] 
+[Warning: epoch 812 not found in raw] 
+[Warning: epoch 813 not found in raw] 
+[Warning: epoch 814 not found in raw] 
+[Warning: epoch 815 not found in raw] 
+[Warning: epoch 816 not found in raw] 
+[Warning: epoch 817 not found in raw] 
+[Warning: epoch 818 not found in raw] 
+[Warning: epoch 819 not found in raw] 
+[Warning: epoch 820 not found in raw] 
+[Warning: epoch 821 not found in raw] 
+[Warning: epoch 822 not found in raw] 
+[Warning: epoch 823 not found in raw] 
+[Warning: epoch 824 not found in raw] 
+[Warning: epoch 825 not found in raw] 
+[Warning: epoch 826 not found in raw] 
+[Warning: epoch 827 not found in raw] 
+[Warning: epoch 828 not found in raw] 
+[Warning: epoch 829 not found in raw] 
+[Warning: epoch 830 not found in raw] 
+[Warning: epoch 831 not found in raw] 
+[Warning: epoch 832 not found in raw] 
+[Warning: epoch 833 not found in raw] 
+[Warning: epoch 834 not found in raw] 
+[Warning: epoch 835 not found in raw] 
+[Warning: epoch 836 not found in raw] 
+[Warning: epoch 837 not found in raw] 
+[Warning: epoch 838 not found in raw] 
+[Warning: epoch 839 not found in raw] 
+[Warning: epoch 840 not found in raw] 
+[Warning: epoch 841 not found in raw] 
+[Warning: epoch 842 not found in raw] 
+[Warning: epoch 843 not found in raw] 
+[Warning: epoch 844 not found in raw] 
+[Warning: epoch 845 not found in raw] 
+[Warning: epoch 846 not found in raw] 
+[Warning: epoch 847 not found in raw] 
+[Warning: epoch 848 not found in raw] 
+[Warning: epoch 849 not found in raw] 
+[Warning: epoch 850 not found in raw] 
+[Warning: epoch 851 not found in raw] 
+[Warning: epoch 852 not found in raw] 
+[Warning: epoch 853 not found in raw] 
+[Warning: epoch 854 not found in raw] 
+[Warning: epoch 855 not found in raw] 
+[Warning: epoch 856 not found in raw] 
+[Warning: epoch 857 not found in raw] 
+[Warning: epoch 858 not found in raw] 
+[Warning: epoch 859 not found in raw] 
+[Warning: epoch 860 not found in raw] 
+[Warning: epoch 861 not found in raw] 
+[Warning: epoch 862 not found in raw] 
+[Warning: epoch 863 not found in raw] 
+[Warning: epoch 864 not found in raw] 
+[Warning: epoch 865 not found in raw] 
+[Warning: epoch 866 not found in raw] 
+[Warning: epoch 867 not found in raw] 
+[Warning: epoch 868 not found in raw] 
+[Warning: epoch 869 not found in raw] 
+[Warning: epoch 870 not found in raw] 
+[Warning: epoch 871 not found in raw] 
+[Warning: epoch 872 not found in raw] 
+[Warning: epoch 873 not found in raw] 
+[Warning: epoch 874 not found in raw] 
+[Warning: epoch 875 not found in raw] 
+[Warning: epoch 876 not found in raw] 
+[Warning: epoch 877 not found in raw] 
+[Warning: epoch 878 not found in raw] 
+[Warning: epoch 879 not found in raw] 
+[Warning: epoch 880 not found in raw] 
+[Warning: epoch 881 not found in raw] 
+[Warning: epoch 882 not found in raw] 
+[Warning: epoch 883 not found in raw] 
+[Warning: epoch 884 not found in raw] 
+[Warning: epoch 885 not found in raw] 
+[Warning: epoch 886 not found in raw] 
+[Warning: epoch 887 not found in raw] 
+[Warning: epoch 888 not found in raw] 
+[Warning: epoch 889 not found in raw] 
+[Warning: epoch 890 not found in raw] 
+[Warning: epoch 891 not found in raw] 
+[Warning: epoch 892 not found in raw] 
+[Warning: epoch 893 not found in raw] 
+[Warning: epoch 894 not found in raw] 
+[Warning: epoch 895 not found in raw] 
+[Warning: epoch 896 not found in raw] 
+[Warning: epoch 897 not found in raw] 
+[Warning: epoch 898 not found in raw] 
+[Warning: epoch 899 not found in raw] 
+[Warning: epoch 900 not found in raw] 
+[Warning: epoch 901 not found in raw] 
+[Warning: epoch 902 not found in raw] 
+[Warning: epoch 903 not found in raw] 
+[Warning: epoch 904 not found in raw] 
+[Warning: epoch 905 not found in raw] 
+[Warning: epoch 906 not found in raw] 
+[Warning: epoch 907 not found in raw] 
+[Warning: epoch 908 not found in raw] 
+[Warning: epoch 909 not found in raw] 
+[Warning: epoch 910 not found in raw] 
+[Warning: epoch 911 not found in raw] 
+[Warning: epoch 912 not found in raw] 
+[Warning: epoch 913 not found in raw] 
+[Warning: epoch 914 not found in raw] 
+[Warning: epoch 915 not found in raw] 
+[Warning: epoch 916 not found in raw] 
+[Warning: epoch 917 not found in raw] 
+[Warning: epoch 918 not found in raw] 
+[Warning: epoch 919 not found in raw] 
+[Warning: epoch 920 not found in raw] 
+[Warning: epoch 921 not found in raw] 
+[Warning: epoch 922 not found in raw] 
+[Warning: epoch 923 not found in raw] 
+[Warning: epoch 924 not found in raw] 
+[Warning: epoch 925 not found in raw] 
+[Warning: epoch 926 not found in raw] 
+[Warning: epoch 927 not found in raw] 
+[Warning: epoch 928 not found in raw] 
+[Warning: epoch 929 not found in raw] 
+[Warning: epoch 930 not found in raw] 
+[Warning: epoch 931 not found in raw] 
+[Warning: epoch 932 not found in raw] 
+[Warning: epoch 933 not found in raw] 
+[Warning: epoch 934 not found in raw] 
+[Warning: epoch 935 not found in raw] 
+[Warning: epoch 936 not found in raw] 
+[Warning: epoch 937 not found in raw] 
+[Warning: epoch 938 not found in raw] 
+[Warning: epoch 939 not found in raw] 
+[Warning: epoch 940 not found in raw] 
+[Warning: epoch 941 not found in raw] 
+[Warning: epoch 942 not found in raw] 
+[Warning: epoch 943 not found in raw] 
+[Warning: epoch 944 not found in raw] 
+[Warning: epoch 945 not found in raw] 
+[Warning: epoch 946 not found in raw] 
+[Warning: epoch 947 not found in raw] 
+[Warning: epoch 948 not found in raw] 
+[Warning: epoch 949 not found in raw] 
+[Warning: epoch 950 not found in raw] 
+[Warning: epoch 951 not found in raw] 
+[Warning: epoch 952 not found in raw] 
+[Warning: epoch 953 not found in raw] 
+[Warning: epoch 954 not found in raw] 
+[Warning: epoch 955 not found in raw] 
+[Warning: epoch 956 not found in raw] 
+[Warning: epoch 957 not found in raw] 
+[Warning: epoch 958 not found in raw] 
+[Warning: epoch 959 not found in raw] 
+[Warning: epoch 960 not found in raw] 
+[Warning: epoch 961 not found in raw] 
+[Warning: epoch 962 not found in raw] 
+[Warning: epoch 963 not found in raw] 
+[Warning: epoch 964 not found in raw] 
+[Warning: epoch 965 not found in raw] 
+[Warning: epoch 966 not found in raw] 
+[Warning: epoch 967 not found in raw] 
+[Warning: epoch 968 not found in raw] 
+[Warning: epoch 969 not found in raw] 
+[Warning: epoch 970 not found in raw] 
+[Warning: epoch 971 not found in raw] 
+[Warning: epoch 972 not found in raw] 
+[Warning: epoch 973 not found in raw] 
+[Warning: epoch 974 not found in raw] 
+[Warning: epoch 975 not found in raw] 
+[Warning: epoch 976 not found in raw] 
+[Warning: epoch 977 not found in raw] 
+[Warning: epoch 978 not found in raw] 
+[Warning: epoch 979 not found in raw] 
+[Warning: epoch 980 not found in raw] 
+[Warning: epoch 981 not found in raw] 
+[Warning: epoch 982 not found in raw] 
+[Warning: epoch 983 not found in raw] 
+[Warning: epoch 984 not found in raw] 
+[Warning: epoch 985 not found in raw] 
+[Warning: epoch 986 not found in raw] 
+[Warning: epoch 987 not found in raw] 
+[Warning: epoch 988 not found in raw] 
+[Warning: epoch 989 not found in raw] 
+[Warning: epoch 990 not found in raw] 
+[Warning: epoch 991 not found in raw] 
+[Warning: epoch 992 not found in raw] 
+[Warning: epoch 993 not found in raw] 
+[Warning: epoch 994 not found in raw] 
+[Warning: epoch 995 not found in raw] 
+[Warning: epoch 996 not found in raw] 
+[Warning: epoch 997 not found in raw] 
+[Warning: epoch 998 not found in raw] 
+[Warning: epoch 999 not found in raw] 
+[Warning: epoch 1000 not found in raw] 
+[Warning: epoch 1001 not found in raw] 
+[Warning: epoch 1002 not found in raw] 
+[Warning: epoch 1003 not found in raw] 
+[Warning: epoch 1004 not found in raw] 
+[Warning: epoch 1005 not found in raw] 
+[Warning: epoch 1006 not found in raw] 
+[Warning: epoch 1007 not found in raw] 
+[Warning: epoch 1008 not found in raw] 
+[Warning: epoch 1009 not found in raw] 
+[Warning: epoch 1010 not found in raw] 
+[Warning: epoch 1011 not found in raw] 
+[Warning: epoch 1012 not found in raw] 
+[Warning: epoch 1013 not found in raw] 
+[Warning: epoch 1014 not found in raw] 
+[Warning: epoch 1015 not found in raw] 
+[Warning: epoch 1016 not found in raw] 
+[Warning: epoch 1017 not found in raw] 
+[Warning: epoch 1018 not found in raw] 
+[Warning: epoch 1019 not found in raw] 
+[Warning: epoch 1020 not found in raw] 
+[Warning: epoch 1021 not found in raw] 
+[Warning: epoch 1022 not found in raw] 
+[Warning: epoch 1023 not found in raw] 
+[Warning: epoch 1024 not found in raw] 
+[Warning: epoch 1025 not found in raw] 
+[Warning: epoch 1026 not found in raw] 
+[Warning: epoch 1027 not found in raw] 
+[Warning: epoch 1028 not found in raw] 
+[Warning: epoch 1029 not found in raw] 
+[Warning: epoch 1030 not found in raw] 
+[Warning: epoch 1031 not found in raw] 
+[Warning: epoch 1032 not found in raw] 
+[Warning: epoch 1033 not found in raw] 
+[Warning: epoch 1034 not found in raw] 
+[Warning: epoch 1035 not found in raw] 
+[Warning: epoch 1036 not found in raw] 
+[Warning: epoch 1037 not found in raw] 
+[Warning: epoch 1038 not found in raw] 
+[Warning: epoch 1039 not found in raw] 
+[Warning: epoch 1040 not found in raw] 
+[Warning: epoch 1041 not found in raw] 
+[Warning: epoch 1042 not found in raw] 
+[Warning: epoch 1043 not found in raw] 
+[Warning: epoch 1044 not found in raw] 
+[Warning: epoch 1045 not found in raw] 
+[Warning: epoch 1046 not found in raw] 
+[Warning: epoch 1047 not found in raw] 
+[Warning: epoch 1048 not found in raw] 
+[Warning: epoch 1049 not found in raw] 
+[Warning: epoch 1050 not found in raw] 
+[Warning: epoch 1051 not found in raw] 
+[Warning: epoch 1052 not found in raw] 
+[Warning: epoch 1053 not found in raw] 
+[Warning: epoch 1054 not found in raw] 
+[Warning: epoch 1055 not found in raw] 
+[Warning: epoch 1056 not found in raw] 
+[Warning: epoch 1057 not found in raw] 
+[Warning: epoch 1058 not found in raw] 
+[Warning: epoch 1059 not found in raw] 
+[Warning: epoch 1060 not found in raw] 
+[Warning: epoch 1061 not found in raw] 
+[Warning: epoch 1062 not found in raw] 
+[Warning: epoch 1063 not found in raw] 
+[Warning: epoch 1064 not found in raw] 
+[Warning: epoch 1065 not found in raw] 
+[Warning: epoch 1066 not found in raw] 
+[Warning: epoch 1067 not found in raw] 
+[Warning: epoch 1068 not found in raw] 
+[Warning: epoch 1069 not found in raw] 
+[Warning: epoch 1070 not found in raw] 
+[Warning: epoch 1071 not found in raw] 
+[Warning: epoch 1072 not found in raw] 
+[Warning: epoch 1073 not found in raw] 
+[Warning: epoch 1074 not found in raw] 
+[Warning: epoch 1075 not found in raw] 
+[Warning: epoch 1076 not found in raw] 
+[Warning: epoch 1077 not found in raw] 
+[Warning: epoch 1078 not found in raw] 
+[Warning: epoch 1079 not found in raw] 
+[Warning: epoch 1080 not found in raw] 
+[Warning: epoch 1081 not found in raw] 
+[Warning: epoch 1082 not found in raw] 
+[Warning: epoch 1083 not found in raw] 
+[Warning: epoch 1084 not found in raw] 
+[Warning: epoch 1085 not found in raw] 
+[Warning: epoch 1086 not found in raw] 
+[Warning: epoch 1087 not found in raw] 
+[Warning: epoch 1088 not found in raw] 
+[Warning: epoch 1089 not found in raw] 
+[Warning: epoch 1090 not found in raw] 
+[Warning: epoch 1091 not found in raw] 
+[Warning: epoch 1092 not found in raw] 
+[Warning: epoch 1093 not found in raw] 
+[Warning: epoch 1094 not found in raw] 
+[Warning: epoch 1095 not found in raw] 
+[Warning: partial epoch 1096 loaded] 
+[Warning: partial epoch 1097 loaded] 
+[Warning: partial epoch 1098 loaded] 
+[Warning: partial epoch 1099 loaded] 
+[Warning: partial epoch 1100 loaded] 
+[Warning: partial epoch 1101 loaded] 
+[Warning: partial epoch 1102 loaded] 
+[Warning: partial epoch 1103 loaded] 
+[Warning: partial epoch 1104 loaded] 
+[Warning: partial epoch 1105 loaded] 
+[Warning: partial epoch 1106 loaded] 
+[Warning: partial epoch 1107 loaded] 
+[Warning: partial epoch 1108 loaded] 
+[Warning: partial epoch 1109 loaded] 
+[Warning: partial epoch 1110 loaded] 
+[Warning: partial epoch 1111 loaded] 
+[Warning: partial epoch 1112 loaded] 
+[Warning: partial epoch 1113 loaded] 
+[Warning: partial epoch 1114 loaded] 
+[Warning: partial epoch 1115 loaded] 
+[Warning: partial epoch 1116 loaded] 
+[Warning: partial epoch 1117 loaded] 
+[Warning: partial epoch 1118 loaded] 
+[Warning: partial epoch 1119 loaded] 
+[Warning: partial epoch 1120 loaded] 
+[Warning: partial epoch 1121 loaded] 
+[Warning: partial epoch 1122 loaded] 
+[Warning: partial epoch 1123 loaded] 
+[Warning: partial epoch 1124 loaded] 
+[Warning: partial epoch 1125 loaded] 
+[Warning: partial epoch 1126 loaded] 
+[Warning: partial epoch 1127 loaded] 
+[Warning: partial epoch 1128 loaded] 
+[Warning: partial epoch 1129 loaded] 
+[Warning: partial epoch 1130 loaded] 
+[Warning: partial epoch 1131 loaded] 
+[Warning: partial epoch 1132 loaded] 
+[Warning: partial epoch 1133 loaded] 
+[Warning: partial epoch 1134 loaded] 
+[Warning: partial epoch 1135 loaded] 
+[Warning: partial epoch 1136 loaded] 
+[Warning: partial epoch 1137 loaded] 
+[Warning: partial epoch 1138 loaded] 
+[Warning: partial epoch 1139 loaded] 
+[Warning: partial epoch 1140 loaded] 
+[Warning: partial epoch 1141 loaded] 
+[Warning: partial epoch 1142 loaded] 
+[Warning: partial epoch 1143 loaded] 
+[Warning: partial epoch 1144 loaded] 
+[Warning: partial epoch 1145 loaded] 
+[Warning: partial epoch 1146 loaded] 
+[Warning: partial epoch 1147 loaded] 
+[Warning: partial epoch 1148 loaded] 
+[Warning: partial epoch 1149 loaded] 
+[Warning: partial epoch 1150 loaded] 
+[Warning: partial epoch 1151 loaded] 
+[Warning: partial epoch 1152 loaded] 
+[Warning: partial epoch 1153 loaded] 
+[Warning: partial epoch 1154 loaded] 
+[Warning: partial epoch 1155 loaded] 
+[Warning: partial epoch 1156 loaded] 
+[Warning: epoch 92014 not found in raw] 
+[Warning: epoch 92015 not found in raw] 
+[Warning: epoch 92016 not found in raw] 
+[Warning: epoch 92017 not found in raw] 
+[Warning: epoch 92018 not found in raw] 
+[Warning: epoch 92019 not found in raw] 
+[Warning: epoch 92020 not found in raw] 
+[Warning: epoch 92021 not found in raw] 
+[Warning: epoch 92022 not found in raw] 
+[Warning: epoch 92023 not found in raw] 
+[Warning: epoch 92024 not found in raw] 
+[Warning: epoch 92025 not found in raw] 
+[Warning: epoch 92026 not found in raw] 
+[Warning: epoch 92027 not found in raw] 
+[Warning: epoch 92028 not found in raw] 
+[Warning: epoch 92029 not found in raw] 
+[Warning: epoch 92030 not found in raw] 
+[Warning: epoch 92031 not found in raw] 
+[Warning: epoch 92032 not found in raw] 
+[Warning: epoch 92033 not found in raw] 
+[Warning: epoch 92034 not found in raw] 
+[Warning: epoch 92035 not found in raw] 
+[Warning: epoch 92036 not found in raw] 
+[Warning: epoch 92037 not found in raw] 
+[Warning: epoch 92038 not found in raw] 
+[Warning: epoch 92039 not found in raw] 
+[Warning: epoch 92040 not found in raw] 
+[Warning: epoch 92041 not found in raw] 
+[Warning: epoch 92042 not found in raw] 
+[Warning: epoch 92043 not found in raw] 
+[Warning: epoch 92044 not found in raw] 
+[Warning: epoch 92045 not found in raw] 
+[Warning: epoch 92046 not found in raw] 
+[Warning: epoch 92047 not found in raw] 
+[Warning: epoch 92048 not found in raw] 
+[Warning: epoch 92049 not found in raw] 
+[Warning: epoch 92050 not found in raw] 
+[Warning: epoch 92051 not found in raw] 
+[Warning: epoch 92052 not found in raw] 
+[Warning: epoch 92053 not found in raw] 
+[Warning: epoch 92054 not found in raw] 
+[Warning: epoch 92055 not found in raw] 
+[Warning: epoch 92056 not found in raw] 
+[Warning: epoch 92057 not found in raw] 
+[Warning: epoch 92058 not found in raw] 
+[Warning: epoch 92059 not found in raw] 
+[Warning: epoch 92060 not found in raw] 
+[Warning: epoch 92061 not found in raw] 
+[Warning: epoch 92062 not found in raw] 
+[Warning: epoch 92063 not found in raw] 
+[Warning: epoch 92064 not found in raw] 
+[Warning: epoch 92065 not found in raw] 
+[Warning: epoch 92066 not found in raw] 
+[Warning: epoch 92067 not found in raw] 
+[Warning: epoch 92068 not found in raw] 
+[Warning: epoch 92069 not found in raw] 
+[Warning: epoch 92070 not found in raw] 
+[Warning: epoch 92071 not found in raw] 
+[Warning: epoch 92072 not found in raw] 
+[Warning: epoch 92073 not found in raw] 
+[Warning: epoch 92074 not found in raw] 
+[Warning: epoch 92075 not found in raw] 
+[Warning: epoch 92076 not found in raw] 
+[Warning: epoch 92077 not found in raw] 
+[Warning: epoch 92078 not found in raw] 
+[Warning: epoch 92079 not found in raw] 
+[Warning: epoch 92080 not found in raw] 
+[Warning: epoch 92081 not found in raw] 
+[Warning: epoch 92082 not found in raw] 
+[Warning: epoch 92083 not found in raw] 
+[Warning: epoch 92084 not found in raw] 
+[Warning: epoch 92085 not found in raw] 
+[Warning: epoch 92086 not found in raw] 
+[Warning: epoch 92087 not found in raw] 
+[Warning: epoch 92088 not found in raw] 
+[Warning: epoch 92089 not found in raw] 
+[Warning: epoch 92090 not found in raw] 
+[Warning: epoch 92091 not found in raw] 
+[Warning: epoch 92092 not found in raw] 
+[Warning: epoch 92093 not found in raw] 
+[Warning: epoch 92094 not found in raw] 
+[Warning: epoch 92095 not found in raw] 
+[Warning: epoch 92096 not found in raw] 
+[Warning: epoch 92097 not found in raw] 
+[Warning: epoch 92098 not found in raw] 
+[Warning: epoch 92099 not found in raw] 
+[Warning: epoch 92100 not found in raw] 
+[Warning: epoch 92101 not found in raw] 
+[Warning: epoch 92102 not found in raw] 
+[Warning: epoch 92103 not found in raw] 
+[Warning: epoch 92104 not found in raw] 
+[Warning: epoch 92105 not found in raw] 
+[Warning: epoch 92106 not found in raw] 
+[Warning: epoch 92107 not found in raw] 
+[Warning: epoch 92108 not found in raw] 
+[Warning: epoch 92109 not found in raw] 
+[Warning: epoch 92110 not found in raw] 
+[Warning: epoch 92111 not found in raw] 
+[Warning: epoch 92112 not found in raw] 
+[Warning: epoch 92113 not found in raw] 
+[Warning: epoch 92114 not found in raw] 
+[Warning: epoch 92115 not found in raw] 
+[Warning: epoch 92116 not found in raw] 
+[Warning: epoch 92117 not found in raw] 
+[Warning: epoch 92118 not found in raw] 
+[Warning: epoch 92119 not found in raw] 
+[Warning: epoch 92120 not found in raw] 
+[Warning: epoch 92121 not found in raw] 
+[Warning: epoch 92122 not found in raw] 
+[Warning: epoch 92123 not found in raw] 
+[Warning: epoch 92124 not found in raw] 
+[Warning: epoch 92125 not found in raw] 
+[Warning: epoch 92126 not found in raw] 
+[Warning: epoch 92127 not found in raw] 
+[Warning: epoch 92128 not found in raw] 
+[Warning: epoch 92129 not found in raw] 
+[Warning: epoch 92130 not found in raw] 
+[Warning: epoch 92131 not found in raw] 
+[Warning: epoch 92132 not found in raw] 
+[Warning: epoch 92133 not found in raw] 
+[Warning: epoch 92134 not found in raw] 
+[Warning: epoch 92135 not found in raw] 
+[Warning: epoch 92136 not found in raw] 
+[Warning: epoch 92137 not found in raw] 
+[Warning: epoch 92138 not found in raw] 
+[Warning: epoch 92139 not found in raw] 
+[Warning: epoch 92140 not found in raw] 
+[Warning: epoch 92141 not found in raw] 
+[Warning: epoch 92142 not found in raw] 
+[Warning: epoch 92143 not found in raw] 
+[Warning: epoch 92144 not found in raw] 
+[Warning: epoch 92145 not found in raw] 
+[Warning: epoch 92146 not found in raw] 
+[Warning: epoch 92147 not found in raw] 
+[Warning: epoch 92148 not found in raw] 
+[Warning: epoch 92149 not found in raw] 
+[Warning: epoch 92150 not found in raw] 
+[Warning: epoch 92151 not found in raw] 
+[Warning: epoch 92152 not found in raw] 
+[Warning: epoch 92153 not found in raw] 
+[Warning: epoch 92154 not found in raw] 
+[Warning: epoch 92155 not found in raw] 
+[Warning: epoch 92156 not found in raw] 
+[Warning: epoch 92157 not found in raw] 
+[Warning: epoch 92158 not found in raw] 
+[Warning: epoch 92159 not found in raw] 
+[Warning: epoch 92160 not found in raw] 
+[Warning: epoch 92161 not found in raw] 
+[Warning: epoch 92162 not found in raw] 
+[Warning: epoch 92163 not found in raw] 
+[Warning: epoch 92164 not found in raw] 
+[Warning: epoch 92165 not found in raw] 
+[Warning: epoch 92166 not found in raw] 
+[Warning: epoch 92167 not found in raw] 
+[Warning: epoch 92168 not found in raw] 
+[Warning: epoch 92169 not found in raw] 
+[Warning: epoch 92170 not found in raw] 
+[Warning: epoch 92171 not found in raw] 
+[Warning: epoch 92172 not found in raw] 
+[Warning: epoch 92173 not found in raw] 
+[Warning: epoch 92174 not found in raw] 
+[Warning: epoch 92175 not found in raw] 
+[Warning: epoch 92176 not found in raw] 
+[Warning: epoch 92177 not found in raw] 
+[Warning: epoch 92178 not found in raw] 
+[Warning: epoch 92179 not found in raw] 
+[Warning: epoch 92180 not found in raw] 
+[Warning: epoch 92181 not found in raw] 
+[Warning: epoch 92182 not found in raw] 
+[Warning: epoch 92183 not found in raw] 
+[Warning: epoch 92184 not found in raw] 
+[Warning: epoch 92185 not found in raw] 
+[Warning: epoch 92186 not found in raw] 
+[Warning: epoch 92187 not found in raw] 
+[Warning: epoch 92188 not found in raw] 
+[Warning: epoch 92189 not found in raw] 
+[Warning: epoch 92190 not found in raw] 
+[Warning: epoch 92191 not found in raw] 
+[Warning: epoch 92192 not found in raw] 
+[Warning: epoch 92193 not found in raw] 
+[Warning: epoch 92194 not found in raw] 
+[Warning: epoch 92195 not found in raw] 
+[Warning: epoch 92196 not found in raw] 
+[Warning: epoch 92197 not found in raw] 
+[Warning: epoch 92198 not found in raw] 
+[Warning: epoch 92199 not found in raw] 
+[Warning: epoch 92200 not found in raw] 
+[Warning: epoch 92201 not found in raw] 
+[Warning: epoch 92202 not found in raw] 
+[Warning: epoch 92203 not found in raw] 
+[Warning: epoch 92204 not found in raw] 
+[Warning: epoch 92205 not found in raw] 
+[Warning: epoch 92206 not found in raw] 
+[Warning: epoch 92207 not found in raw] 
+[Warning: epoch 92208 not found in raw] 
+[Warning: epoch 92209 not found in raw] 
+[Warning: epoch 92210 not found in raw] 
+[Warning: epoch 92211 not found in raw] 
+[Warning: epoch 92212 not found in raw] 
+[Warning: epoch 92213 not found in raw] 
+[Warning: epoch 92214 not found in raw] 
+[Warning: epoch 92215 not found in raw] 
+[Warning: epoch 92216 not found in raw] 
+[Warning: epoch 92217 not found in raw] 
+[Warning: epoch 92218 not found in raw] 
+[Warning: epoch 92219 not found in raw] 
+[Warning: epoch 92220 not found in raw] 
+[Warning: epoch 92221 not found in raw] 
+[Warning: epoch 92222 not found in raw] 
+[Warning: epoch 92223 not found in raw] 
+[Warning: epoch 92224 not found in raw] 
+[Warning: epoch 92225 not found in raw] 
+[Warning: epoch 92226 not found in raw] 
+[Warning: epoch 92227 not found in raw] 
+[Warning: epoch 92228 not found in raw] 
+[Warning: epoch 92229 not found in raw] 
+[Warning: epoch 92230 not found in raw] 
+[Warning: epoch 92231 not found in raw] 
+[Warning: epoch 92232 not found in raw] 
+[Warning: epoch 92233 not found in raw] 
+[Warning: epoch 92234 not found in raw] 
+[Warning: epoch 92235 not found in raw] 
+[Warning: epoch 92236 not found in raw] 
+[Warning: epoch 92237 not found in raw] 
+[Warning: epoch 92238 not found in raw] 
+[Warning: epoch 92239 not found in raw] 
+[Warning: epoch 92240 not found in raw] 
+[Warning: epoch 92241 not found in raw] 
+[Warning: epoch 92242 not found in raw] 
+[Warning: epoch 92243 not found in raw] 
+[Warning: epoch 92244 not found in raw] 
+[Warning: epoch 92245 not found in raw] 
+[Warning: epoch 92246 not found in raw] 
+[Warning: epoch 92247 not found in raw] 
+[Warning: epoch 92248 not found in raw] 
+[Warning: epoch 92249 not found in raw] 
+[Warning: epoch 92250 not found in raw] 
+[Warning: epoch 92251 not found in raw] 
+[Warning: epoch 92252 not found in raw] 
+[Warning: epoch 92253 not found in raw] 
+[Warning: epoch 92254 not found in raw] 
+[Warning: epoch 92255 not found in raw] 
+[Warning: epoch 92256 not found in raw] 
+[Warning: epoch 92257 not found in raw] 
+[Warning: epoch 92258 not found in raw] 
+[Warning: epoch 92259 not found in raw] 
+[Warning: epoch 92260 not found in raw] 
+[Warning: epoch 92261 not found in raw] 
+[Warning: epoch 92262 not found in raw] 
+[Warning: epoch 92263 not found in raw] 
+[Warning: epoch 92264 not found in raw] 
+[Warning: epoch 92265 not found in raw] 
+[Warning: epoch 92266 not found in raw] 
+[Warning: epoch 92267 not found in raw] 
+[Warning: epoch 92268 not found in raw] 
+[Warning: epoch 92269 not found in raw] 
+[Warning: epoch 92270 not found in raw] 
+[Warning: epoch 92271 not found in raw] 
+[Warning: epoch 92272 not found in raw] 
+[Warning: epoch 92273 not found in raw] 
+[Warning: epoch 92274 not found in raw] 
+[Warning: epoch 92275 not found in raw] 
+[Warning: epoch 92276 not found in raw] 
+[Warning: epoch 92277 not found in raw] 
+[Warning: epoch 92278 not found in raw] 
+[Warning: epoch 92279 not found in raw] 
+[Warning: epoch 92280 not found in raw] 
+[Warning: epoch 92281 not found in raw] 
+[Warning: epoch 92282 not found in raw] 
+[Warning: epoch 92283 not found in raw] 
+[Warning: epoch 92284 not found in raw] 
+[Warning: epoch 92285 not found in raw] 
+[Warning: epoch 92286 not found in raw] 
+[Warning: epoch 92287 not found in raw] 
+[Warning: epoch 92288 not found in raw] 
+[Warning: epoch 92289 not found in raw] 
+[Warning: epoch 92290 not found in raw] 
+[Warning: epoch 92291 not found in raw] 
+[Warning: epoch 92292 not found in raw] 
+[Warning: epoch 92293 not found in raw] 
+[Warning: epoch 92294 not found in raw] 
+[Warning: epoch 92295 not found in raw] 
+[Warning: epoch 92296 not found in raw] 
+[Warning: epoch 92297 not found in raw] 
+[Warning: epoch 92298 not found in raw] 
+[Warning: epoch 92299 not found in raw] 
+[Warning: epoch 92300 not found in raw] 
+[Warning: epoch 92301 not found in raw] 
+[Warning: epoch 92302 not found in raw] 
+[Warning: epoch 92303 not found in raw] 
+[Warning: epoch 92304 not found in raw] 
+[Warning: epoch 92305 not found in raw] 
+[Warning: epoch 92306 not found in raw] 
+[Warning: epoch 92307 not found in raw] 
+[Warning: epoch 92308 not found in raw] 
+[Warning: epoch 92309 not found in raw] 
+[Warning: epoch 92310 not found in raw] 
+[Warning: epoch 92311 not found in raw] 
+[Warning: epoch 92312 not found in raw] 
+[Warning: epoch 92313 not found in raw] 
+[Warning: epoch 92314 not found in raw] 
+[Warning: epoch 92315 not found in raw] 
+[Warning: epoch 92316 not found in raw] 
+[Warning: epoch 92317 not found in raw] 
+[Warning: epoch 92318 not found in raw] 
+[Warning: epoch 92319 not found in raw] 
+[Warning: epoch 92320 not found in raw] 
+[Warning: epoch 92321 not found in raw] 
+[Warning: epoch 92322 not found in raw] 
+[Warning: epoch 92323 not found in raw] 
+[Warning: epoch 92324 not found in raw] 
+[Warning: epoch 92325 not found in raw] 
+[Warning: epoch 92326 not found in raw] 
+[Warning: epoch 92327 not found in raw] 
+[Warning: epoch 92328 not found in raw] 
+[Warning: epoch 92329 not found in raw] 
+[Warning: epoch 92330 not found in raw] 
+[Warning: epoch 92331 not found in raw] 
+[Warning: epoch 92332 not found in raw] 
+[Warning: epoch 92333 not found in raw] 
+[Warning: epoch 92334 not found in raw] 
+[Warning: epoch 92335 not found in raw] 
+[Warning: epoch 92336 not found in raw] 
+[Warning: epoch 92337 not found in raw] 
+[Warning: epoch 92338 not found in raw] 
+[Warning: epoch 92339 not found in raw] 
+[Warning: epoch 92340 not found in raw] 
+[Warning: epoch 92341 not found in raw] 
+[Warning: epoch 92342 not found in raw] 
+[Warning: epoch 92343 not found in raw] 
+[Warning: epoch 92344 not found in raw] 
+[Warning: epoch 92345 not found in raw] 
+[Warning: epoch 92346 not found in raw] 
+[Warning: epoch 92347 not found in raw] 
+[Warning: epoch 92348 not found in raw] 
+[Warning: epoch 92349 not found in raw] 
+[Warning: epoch 92350 not found in raw] 
+[Warning: epoch 92351 not found in raw] 
+[Warning: epoch 92352 not found in raw] 
+[Warning: epoch 92353 not found in raw] 
+[Warning: epoch 92354 not found in raw] 
+[Warning: epoch 92355 not found in raw] 
+[Warning: epoch 92356 not found in raw] 
+[Warning: epoch 92357 not found in raw] 
+[Warning: epoch 92358 not found in raw] 
+[Warning: epoch 92359 not found in raw] 
+[Warning: epoch 92360 not found in raw] 
+[Warning: epoch 92361 not found in raw] 
+[Warning: epoch 92362 not found in raw] 
+[Warning: epoch 92363 not found in raw] 
+[Warning: epoch 92364 not found in raw] 
+FAILED: Array indices must be positive integers or logical values.
+Running protocol.audio_p coherence analysis for subject DBS4071 
+FAILED: stimulus syllable not found
+Running protocol.audio_p coherence analysis for subject DBS4072 
+[Warning: the data does not contain a trial definition] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive
+segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 43 seconds and required the additional allocation of an estimated 1 MB
+Binary calculation across channels and epochs.
+[Warning: removing 16132 rows with nans] 
+Obtaining unique epochs...
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bml_redefinetrial', '/Users/ao622/git/bml/signal/bml_redefinetrial.m', 110)" style="font-weight:bold">bml_redefinetrial</a> (<a href="matlab: opentoline('/Users/ao622/git/bml/signal/bml_redefinetrial.m',110,0)">line 110</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bml_annot_calculate2', '/Users/ao622/git/bml/annot/bml_annot_calculate2.m', 83)" style="font-weight:bold">bml_annot_calculate2</a> (<a href="matlab: opentoline('/Users/ao622/git/bml/annot/bml_annot_calculate2.m',83,0)">line 83</a>)
+[ue_raw, ue_db] = bml_redefinetrial(cfg1,raw);
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 133)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',133,0)">line 133</a>)
+coherence_audio_p = bml_annot_calculate2(cfg,Df,{'coherence','norm1','norm2'},
+@get_coherence2);
+} 

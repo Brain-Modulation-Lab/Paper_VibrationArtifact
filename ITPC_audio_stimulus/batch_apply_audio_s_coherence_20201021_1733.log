@@ -1,0 +1,1012 @@
+addpath(PROTOCOL_PATH);
+
+cd(PROTOCOL_PATH)
+
+subject_table = readtable(PROTOCOL_TABLE);         
+fprintf('=== Running protocol %s ===\n',PROTOCOL_FUNCTION)
+=== Running protocol apply_audio_s_coherence ===
+
+for i=1:height(subject_table)
+  SUBJECT = subject_table.subject{i};
+  fprintf('Running protocol.')
+  %running protocol
+  try
+    proto = str2func(PROTOCOL_FUNCTION);
+    proto(SUBJECT);
+    fprintf('OK\n')
+  catch err
+    fprintf('FAILED: %s\n',err.message)
+  end
+end
+Running protocol.audio_s coherence analysis for subject DBS3001 
+FAILED: stimulus syllable not found
+Running protocol.audio_s coherence analysis for subject DBS3002 
+FAILED: stimulus syllable not found
+Running protocol.audio_s coherence analysis for subject DBS3003 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 76 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 3780 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3004 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 58 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 4224 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3005 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 50 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 1190 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3006 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 93 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 420 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3008 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 86 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 1170 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3010 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 157 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 20850 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3011 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 75 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 1376 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3012 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 5
+preprocessing trial 3 from 5
+preprocessing trial 4 from 5
+preprocessing trial 5 from 5
+
+the call to "ft_preprocessing" took 95 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 14678 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3014 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 184 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 2464 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3015 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 102 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 2624 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3016 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 52 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 3750 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3017 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 47 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 3525 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3018 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 166 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 1764 rows with nans] 
+Obtaining unique epochs...
+OK
+Running protocol.audio_s coherence analysis for subject DBS3019 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 85 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 2760 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3020 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 123 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 18522 rows with nans] 
+Obtaining unique epochs...
+OK
+Running protocol.audio_s coherence analysis for subject DBS3021 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 117 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 3425 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3022 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 113 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 1176 rows with nans] 
+Obtaining unique epochs...
+OK
+Running protocol.audio_s coherence analysis for subject DBS3023 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 60 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 6783 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3024 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 121 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 2793 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3025 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 115 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 30690 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3026 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 51 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 13066 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3027 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 131 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 7750 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3028 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 144 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 1043 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3029 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 82 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 2240 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3030 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 90 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 140 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3031 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 93 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 1112 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS3032 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 146 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 3480 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4057 
+FAILED: stimulus syllable not found
+Running protocol.audio_s coherence analysis for subject DBS4058 
+FAILED: stimulus syllable not found
+Running protocol.audio_s coherence analysis for subject DBS4060 
+FAILED: stimulus syllable not found
+Running protocol.audio_s coherence analysis for subject DBS4061 
+FAILED: stimulus syllable not found
+Running protocol.audio_s coherence analysis for subject DBS4062 
+FAILED: stimulus syllable not found
+Running protocol.audio_s coherence analysis for subject DBS4066 
+FAILED: stimulus syllable not found
+Running protocol.audio_s coherence analysis for subject DBS4067 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 53 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 4182 rows with nans] 
+Obtaining unique epochs...
+[Warning: epoch 778 not found in raw] 
+[Warning: epoch 779 not found in raw] 
+[Warning: epoch 780 not found in raw] 
+[Warning: epoch 781 not found in raw] 
+[Warning: epoch 782 not found in raw] 
+[Warning: epoch 783 not found in raw] 
+[Warning: epoch 784 not found in raw] 
+[Warning: epoch 785 not found in raw] 
+[Warning: epoch 786 not found in raw] 
+[Warning: epoch 787 not found in raw] 
+[Warning: epoch 788 not found in raw] 
+[Warning: epoch 789 not found in raw] 
+[Warning: epoch 790 not found in raw] 
+[Warning: epoch 791 not found in raw] 
+[Warning: epoch 792 not found in raw] 
+[Warning: epoch 793 not found in raw] 
+[Warning: epoch 794 not found in raw] 
+[Warning: epoch 795 not found in raw] 
+[Warning: epoch 796 not found in raw] 
+[Warning: epoch 797 not found in raw] 
+[Warning: epoch 798 not found in raw] 
+[Warning: epoch 1622 not found in raw] 
+[Warning: epoch 1623 not found in raw] 
+[Warning: epoch 1624 not found in raw] 
+[Warning: epoch 1625 not found in raw] 
+[Warning: epoch 1626 not found in raw] 
+[Warning: epoch 1627 not found in raw] 
+FAILED: Array indices must be positive integers or logical values.
+Running protocol.audio_s coherence analysis for subject DBS4068 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 64 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 3784 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4069 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 26 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 1408 rows with nans] 
+Obtaining unique epochs...
+OK
+Running protocol.audio_s coherence analysis for subject DBS4070 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 54 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 6480 rows with nans] 
+Obtaining unique epochs...
+[Warning: epoch 1 not found in raw] 
+[Warning: epoch 2 not found in raw] 
+[Warning: epoch 3 not found in raw] 
+[Warning: epoch 4 not found in raw] 
+[Warning: epoch 5 not found in raw] 
+[Warning: epoch 6 not found in raw] 
+[Warning: epoch 7 not found in raw] 
+[Warning: epoch 8 not found in raw] 
+[Warning: epoch 9 not found in raw] 
+[Warning: epoch 10 not found in raw] 
+[Warning: epoch 11 not found in raw] 
+[Warning: epoch 12 not found in raw] 
+[Warning: epoch 13 not found in raw] 
+[Warning: epoch 14 not found in raw] 
+[Warning: epoch 15 not found in raw] 
+[Warning: epoch 16 not found in raw] 
+[Warning: epoch 17 not found in raw] 
+[Warning: epoch 18 not found in raw] 
+[Warning: epoch 19 not found in raw] 
+[Warning: partial epoch 20 loaded] 
+[Warning: epoch 1592 not found in raw] 
+[Warning: epoch 1593 not found in raw] 
+[Warning: epoch 1594 not found in raw] 
+[Warning: epoch 1595 not found in raw] 
+[Warning: epoch 1596 not found in raw] 
+[Warning: epoch 1597 not found in raw] 
+FAILED: Array indices must be positive integers or logical values.
+Running protocol.audio_s coherence analysis for subject DBS4071 
+FAILED: stimulus syllable not found
+Running protocol.audio_s coherence analysis for subject DBS4072 
+[Warning: the data does not contain a trial definition] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 86 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 16132 rows with nans] 
+Obtaining unique epochs...
+[Warning: epoch 1546 not found in raw] 
+[Warning: epoch 1547 not found in raw] 
+[Warning: epoch 1548 not found in raw] 
+[Warning: epoch 1549 not found in raw] 
+[Warning: epoch 1550 not found in raw] 
+[Warning: epoch 1551 not found in raw] 
+[Warning: epoch 1552 not found in raw] 
+[Warning: epoch 1553 not found in raw] 
+[Warning: epoch 1554 not found in raw] 
+[Warning: epoch 1555 not found in raw] 
+[Warning: epoch 1556 not found in raw] 
+[Warning: epoch 1557 not found in raw] 
+[Warning: epoch 1558 not found in raw] 
+[Warning: epoch 1559 not found in raw] 
+[Warning: epoch 1560 not found in raw] 
+[Warning: epoch 1561 not found in raw] 
+[Warning: epoch 1562 not found in raw] 
+[Warning: epoch 1563 not found in raw] 
+[Warning: epoch 1564 not found in raw] 
+[Warning: epoch 1565 not found in raw] 
+[Warning: epoch 1566 not found in raw] 
+[Warning: epoch 1567 not found in raw] 
+[Warning: epoch 1568 not found in raw] 
+[Warning: epoch 1569 not found in raw] 
+FAILED: Array indices must be positive integers or logical values.
+Running protocol.audio_s coherence analysis for subject DBS4073 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 1 from 1
+
+the call to "ft_preprocessing" took 25 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 6916 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4074 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 32 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 532 rows with nans] 
+Obtaining unique epochs...
+OK
+Running protocol.audio_s coherence analysis for subject DBS4075 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 1 from 1
+
+the call to "ft_preprocessing" took 52 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 980 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4076 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 49 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 588 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4077 
+[Warning: the data does not contain a trial definition] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 100 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 5180 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4078 
+[Warning: the data does not contain a trial definition] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 93 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 592 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4079 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 96 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 1820 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4080 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 85 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 3996 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4083 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 60 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 6063 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4084 
+[Warning: the data does not contain a trial definition] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 84 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 3256 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4085 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 97 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 882 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4086 
+[Warning: the data does not contain a trial definition] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 80 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 2831 rows with nans] 
+Obtaining unique epochs...
+OK
+Running protocol.audio_s coherence analysis for subject DBS4087 
+[Warning: the data does not contain a trial definition] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 81 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 9834 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_s coherence analysis for subject DBS4088 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', 'E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\private\fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', 'E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', 'E:\MATLAB\fieldtrip\utilities\ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\utilities\ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', 'E:\MATLAB\fieldtrip\ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('E:\MATLAB\fieldtrip\ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_s_coherence', 'Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m', 94)" style="font-weight:bold">apply_audio_s_coherence</a> (<a href="matlab: opentoline('Z:\Users\busha\Analysis\2020-10-21-audio_s_coherence\apply_audio_s_coherence.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 113 seconds
+Binary calculation across channels, same epochs.
+[Warning: removing 7384 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+
+diary('off')

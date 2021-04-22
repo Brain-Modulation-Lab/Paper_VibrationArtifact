@@ -1,0 +1,29 @@
+addpath(PROTOCOL_PATH);
+
+cd(PROTOCOL_PATH)
+
+subject_table = readtable(PROTOCOL_TABLE);         
+fprintf('=== Running protocol %s ===\n',PROTOCOL_FUNCTION)
+=== Running protocol apply_audio_p_coherence_permutation_H0_Mac ===
+
+for i=1:height(subject_table)
+  SUBJECT = subject_table.subject{i};
+  fprintf('Running protocol.')
+  %running protocol
+  try
+    proto = str2func(PROTOCOL_FUNCTION);
+    proto(SUBJECT);
+    fprintf('OK\n')
+  catch err
+    fprintf('FAILED: %s\n',err.message)
+  end
+end
+Running protocol.audio_p coherence analysis for subject DBS3014 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous
+recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.i

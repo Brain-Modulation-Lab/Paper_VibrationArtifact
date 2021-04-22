@@ -1,0 +1,3 @@
+#20201007AB
+see Lab Archives / U01 Speech  / 20201007 - audio_p coherence
+After discussing with Varun, we decided it would be a good idea to run a permutation get an idea of the expected null distribution of this metric of coherence. 

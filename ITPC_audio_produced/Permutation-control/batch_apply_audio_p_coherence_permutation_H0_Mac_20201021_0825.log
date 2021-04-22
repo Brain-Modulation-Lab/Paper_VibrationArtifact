@@ -1,0 +1,116 @@
+addpath(PROTOCOL_PATH);
+
+cd(PROTOCOL_PATH)
+
+subject_table = readtable(PROTOCOL_TABLE);         
+fprintf('=== Running protocol %s ===\n',PROTOCOL_FUNCTION)
+=== Running protocol apply_audio_p_coherence_permutation_H0_Mac ===
+
+for i=1:height(subject_table)
+  SUBJECT = subject_table.subject{i};
+  fprintf('Running protocol.')
+  %running protocol
+  try
+    proto = str2func(PROTOCOL_FUNCTION);
+    proto(SUBJECT);
+    fprintf('OK\n')
+  catch err
+    fprintf('FAILED: %s\n',err.message)
+  end
+end
+Running protocol.audio_p coherence analysis for subject DBS3015 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+ In <a href = "matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',90,1)">fixsampleinfo at line 90</a>
+ In <a href = "matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,1)">ft_datatype_raw at line 147</a>
+ In <a href = "matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,1)">ft_checkdata at line 267</a>
+ In <a href = "matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,1)">ft_preprocessing at line 288</a>
+
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous
+recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 25 MB
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 49 seconds and required the additional allocation of an estimated 4127 MB
+Binary calculation across channels and epochs.
+[Warning: removing 2624 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3016 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a continuous
+recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 11 MB
+preprocessing
+preprocessing trial 2 from 2
+
+the call to "ft_preprocessing" took 27 seconds and required the additional allocation of an estimated 1368 MB
+Binary calculation across channels and epochs.
+[Warning: removing 3750 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3017 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a
+continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+[Warning: correcting numerical inaccuracy in the time axes] 
+[Warning: correcting numerical inaccuracy in the time axes] 
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 1 MB
+preprocessing
+preprocessing trial 2 from 3
+preprocessing trial 3 from 3
+
+the call to "ft_preprocessing" took 24 seconds and required the additional allocation of an estimated 1732 MB
+Binary calculation across channels and epochs.
+[Warning: removing 3525 rows with nans] 
+Obtaining unique epochs...
+[Warning: correcting numerical inaccuracy in the time axes] 
+OK
+Running protocol.audio_p coherence analysis for subject DBS3018 
+[Warning: the trial definition in the configuration is inconsistent with the actual data] 
+[Warning: reconstructing sampleinfo by assuming that the trials are consecutive segments of a
+continuous recording] 
+> In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('fixsampleinfo', '/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m', 102)" style="font-weight:bold">fixsampleinfo</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/private/fixsampleinfo.m',102,0)">line 102</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_datatype_raw', '/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m', 147)" style="font-weight:bold">ft_datatype_raw</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_datatype_raw.m',147,0)">line 147</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_checkdata', '/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m', 267)" style="font-weight:bold">ft_checkdata</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/utilities/ft_checkdata.m',267,0)">line 267</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('ft_preprocessing', '/Users/ao622/git/fieldtrip/ft_preprocessing.m', 288)" style="font-weight:bold">ft_preprocessing</a> (<a href="matlab: opentoline('/Users/ao622/git/fieldtrip/ft_preprocessing.m',288,0)">line 288</a>)
+  In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 94)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',94,0)">line 94</a>)
+the call to "ft_selectdata" took 0 seconds and required the additional allocation of an estimated 0 MB
+preprocessing
+preprocessing trial 2 from 4
+preprocessing trial 3 from 4
+preprocessing trial 4 from 4
+
+the call to "ft_preprocessing" took 98 seconds and required the additional allocation of an estimated 18 MB
+Binary calculation across channels and epochs.
+[Warning: removing 1764 rows with nans] 
+Obtaining unique epochs...
+{Operation terminated by user during <a href="matlab:matlab.internal.language.introspective.errorDocCallback('bml_annot_calculate2', '/Users/ao622/git/bml/annot/bml_annot_calculate2.m', 116)" style="font-weight:bold">bml_annot_calculate2</a> (<a href="matlab: opentoline('/Users/ao622/git/bml/annot/bml_annot_calculate2.m',116,0)">line 116</a>)
+
+
+In <a href="matlab:matlab.internal.language.introspective.errorDocCallback('apply_audio_p_coherence_permutation_H0_Mac', '/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m', 133)" style="font-weight:bold">apply_audio_p_coherence_permutation_H0_Mac</a> (<a href="matlab: opentoline('/Volumes/Nexus/Users/busha/Analysis/2020-08-05-audio_p-coherence/Permutation-control/apply_audio_p_coherence_permutation_H0_Mac.m',133,0)">line 133</a>)
+coherence_audio_p = bml_annot_calculate2(cfg,Df,{'coherence','norm1','norm2'}, @get_coherence2);
+} 
